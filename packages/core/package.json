@@ -1,0 +1,57 @@
+{
+  "name": "@dslate/core",
+  "version": "1.0.9",
+  "description": "一个Ant Design风格的富文本编辑器 - An Ant Design style rich editor based on Slate",
+  "keywords": [
+    "wysiwyg",
+    "rich-editor",
+    "ant-design",
+    "slate",
+    "slate-react",
+    "dslate"
+  ],
+  "sideEffects": [
+    "*.less"
+  ],
+  "homepage": "https://github.com/rojer95/dslate/tree/master/packages/core#readme",
+  "bugs": "https://github.com/rojer95/dslate/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rojer95/dslate"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "escape-html": "^1.0.3",
+    "nanoid": "^3.1.30",
+    "slate": "^0.81.0",
+    "slate-react": "^0.81.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "rojer <rojerchen@qq.com> (https://github.com/rojer95)"
+  ],
+  "devDependencies": {
+    "@types/escape-html": "^1.0.1"
+  }
+}

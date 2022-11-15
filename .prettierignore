@@ -1,0 +1,10 @@
+**/*.svg
+**/*.ejs
+**/*.html
+package.json
+.umi
+.umi-production
+.umi-test
+docs-dist
+packages/component/src/style/theme/*.less
+*.scss

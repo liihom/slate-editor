@@ -1,0 +1,66 @@
+{
+  "name": "@dslate/plugin",
+  "version": "1.0.9",
+  "description": "DSlate预设插件 - Preset plugin of DSlate",
+  "keywords": [
+    "wysiwyg",
+    "rich-editor",
+    "ant-design",
+    "slate",
+    "slate-react",
+    "dslate"
+  ],
+  "sideEffects": [
+    "*.less"
+  ],
+  "homepage": "https://github.com/rojer95/dslate/tree/master/packages/plugin#readme",
+  "bugs": "https://github.com/rojer95/dslate/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rojer95/dslate"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "dist"
+  ],
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "@dslate/component": "1.0.9",
+    "@dslate/core": "1.0.9",
+    "@emotion/css": "^11.7.1",
+    "classnames": "^2.3.1",
+    "escape-html": "^1.0.3",
+    "is-hotkey": "^0.2.0",
+    "rc-upload": "^4.3.3",
+    "react-color": "^2.19.3",
+    "react-rnd": "^10.3.5",
+    "slate": "^0.81.0",
+    "slate-history": "^0.66.0",
+    "slate-react": "^0.81.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "rojer <rojerchen@qq.com> (https://github.com/rojer95)"
+  ],
+  "devDependencies": {
+    "@types/escape-html": "^1.0.1",
+    "@types/react-color": "^3.0.6"
+  }
+}
