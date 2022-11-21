@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "license": "MIT",
   "homepage": "http://rojer95.github.io/dslate",
   "workspaces": [
