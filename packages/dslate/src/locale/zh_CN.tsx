@@ -1,5 +1,5 @@
-import type { Locale } from '@dslate/core';
-import { Locales } from '@dslate/core';
+import type { Locale } from '@cslate/core';
+import { Locales } from '@cslate/core';
 
 const localeValues: Locale = {
   locale: Locales.zhCN,

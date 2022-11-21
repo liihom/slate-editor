@@ -3,8 +3,8 @@
  */
 import React, { useEffect, useRef, useState } from 'react';
 import type { Descendant } from 'slate';
-import DSlate from '@dslate/semi';
-import type { DSlateRef } from '@dslate/core';
+import DSlate from '@cslate/semi';
+import type { DSlateRef } from '@cslate/core';
 
 import { Button, Form, Space } from '@douyinfe/semi-ui';
 

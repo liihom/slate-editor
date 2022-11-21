@@ -1,6 +1,6 @@
 import type { InputHTMLAttributes } from 'react';
 import React from 'react';
-import { usePluginHelper } from '@dslate/core';
+import { usePluginHelper } from '@cslate/core';
 
 const Input = ({
   prefixCls = 'input',

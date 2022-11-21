@@ -7,16 +7,16 @@ import { Transforms } from 'slate';
 import { useSlate } from 'slate-react';
 import clns from 'classnames';
 
-import { Toolbar } from '@dslate/component';
+import { Toolbar } from '@cslate/component';
 
 import Img from './img';
-import { useMessage } from '@dslate/core';
+import { useMessage } from '@cslate/core';
 
 import type { Descendant } from 'slate';
 import type { CSSProperties } from 'react';
 
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
-import { Locales } from '@dslate/core';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import { Locales } from '@cslate/core';
 
 import { emotions } from './data';
 import './index.less';

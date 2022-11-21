@@ -1,4 +1,4 @@
-import { usePluginHelper } from '@dslate/core';
+import { usePluginHelper } from '@cslate/core';
 import React from 'react';
 
 export default () => {

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 import { Editor, Transforms, Element } from 'slate';
 import { useSlate, ReactEditor } from 'slate-react';
 import { TYPE as LIST_TYPE, IS_ORDERED } from './list';
-import { IconFont, Toolbar } from '@dslate/component';
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
-import { useMessage, isBlockActive, isStart } from '@dslate/core';
+import { IconFont, Toolbar } from '@cslate/component';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import { useMessage, isBlockActive, isStart } from '@cslate/core';
 
 const TYPE = 'todo-list';
 

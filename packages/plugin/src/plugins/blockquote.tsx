@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { isBlockActive, isEmpty, isStart, useMessage } from '@dslate/core';
-import { IconFont, Toolbar } from '@dslate/component';
+import { isBlockActive, isEmpty, isStart, useMessage } from '@cslate/core';
+import { IconFont, Toolbar } from '@cslate/component';
 import { Editor, Transforms, Element, Path, Range } from 'slate';
 import { useSlate } from 'slate-react';
 
 import type { CSSProperties } from 'react';
 import type { Descendant } from 'slate';
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
-import { Locales } from '@dslate/core';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import { Locales } from '@cslate/core';
 
 const TYPE = 'blockquote';
 

@@ -51,8 +51,8 @@ type Locale = {
 插件国际化文案定义示例：
 
 ```tsx | pure
-import type { DSlatePlugin } from '@dslate/core';
-import { Locales } from '@dslate/core';
+import type { DSlatePlugin } from '@cslate/core';
+import { Locales } from '@cslate/core';
 
 const Plugin: DSlatePlugin = {
   // ingore other ...
@@ -87,10 +87,10 @@ getMessage('tooltip', '加粗');
 ```tsx | pure
 import React from 'react';
 import { useSlate } from 'slate-react';
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 
-import { Toolbar, IconFont, getTextProps, toggleTextProps, useMessage } from '@dslate/core';
-import type { DSlatePlugin } from '@dslate/core';
+import { Toolbar, IconFont, getTextProps, toggleTextProps, useMessage } from '@cslate/core';
+import type { DSlatePlugin } from '@cslate/core';
 
 const TYPE = 'bold';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Tooltip from 'rc-tooltip';
-import { usePluginHelper } from '@dslate/core';
+import { usePluginHelper } from '@cslate/core';
 import type { TooltipProps } from 'rc-tooltip/lib/Tooltip';
 
 const DTooltip = ({

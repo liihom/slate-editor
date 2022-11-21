@@ -1,6 +1,6 @@
 import React from 'react';
-import { PluginUuidContext, usePluginHelper } from '@dslate/core';
-import type { DSlatePlugin } from '@dslate/core';
+import { PluginUuidContext, usePluginHelper } from '@cslate/core';
+import type { DSlatePlugin } from '@cslate/core';
 
 interface ToolbarItemProps {
   plugin: DSlatePlugin;

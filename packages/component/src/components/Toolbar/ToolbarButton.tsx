@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
-import { usePlugin, usePluginHelper } from '@dslate/core';
+import { usePlugin, usePluginHelper } from '@cslate/core';
 import Tooltip from '../Tooltip';
 
 export type ToolbarButtonProps = {

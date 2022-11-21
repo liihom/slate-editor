@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import type { Descendant } from 'slate';
-import DSlateAnt from '@dslate/dslate';
-import DSlateSemi from '@dslate/semi';
+import DSlateAnt from '@cslate/cslate';
+import DSlateSemi from '@cslate/semi';
 
 export default () => {
   const [value, setValue] = useState<Descendant[]>([

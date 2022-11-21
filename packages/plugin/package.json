@@ -1,6 +1,6 @@
 {
-  "name": "@dslate/plugin",
-  "version": "1.0.9",
+  "name": "@cslate/plugin",
+  "version": "1.0.0",
   "description": "DSlate预设插件 - Preset plugin of DSlate",
   "keywords": [
     "wysiwyg",

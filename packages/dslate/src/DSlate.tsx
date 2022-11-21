@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
 import type { DSlateRef } from '@cslate/core';
-import { ConfigProvider, ConfigConsumer, mergeLocalteFromPlugins } from '@cslate/core';
+import { ConfigProvider, ConfigConsumer } from '@cslate/core';
 
 import DefaultPlugin from '@cslate/plugin';
+import { mergeLocalteFromPlugins } from '@cslate/core';
 
-import DSlate from './components';
-import type { SemiStyleDSlateProps } from './typing';
+import DSlate from './components/DSlate';
+import type { AntdStyleDSlateProps } from './typing';
 
 import ZH_CN from './locale/zh_CN';
 import EN_US from './locale/en_US';
@@ -36,7 +37,7 @@ export const DefaultToolbar = [
   'blockquote',
   'hr',
 ];
-export default forwardRef<DSlateRef, SemiStyleDSlateProps>(
+export default forwardRef<DSlateRef, AntdStyleDSlateProps>(
   ({ toolbar = DefaultToolbar, ...props }, ref) => {
     return (
       <ConfigConsumer>
@@ -46,7 +47,6 @@ export default forwardRef<DSlateRef, SemiStyleDSlateProps>(
               ? Object.values(DefaultPlugin)
               : value.plugins;
           const locales = value.locales ? value.locales : DefaultLocales;
-
           return (
             <ConfigProvider
               value={{
@@ -56,7 +56,7 @@ export default forwardRef<DSlateRef, SemiStyleDSlateProps>(
                 iconScriptUrl: '//at.alicdn.com/t/c/font_3062978_atuqwazgoap.js',
               }}
             >
-              <DSlate {...props} toolbar={toolbar} ref={ref} />
+              <DSlate {...props} ref={ref} toolbar={toolbar} />
             </ConfigProvider>
           );
         }}

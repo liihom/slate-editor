@@ -16,11 +16,11 @@ nav:
 ```tsx | pure
 import React from 'react';
 import locale from '../locale';
-import type { DSlatePlugin } from '@dslate/core';
+import type { DSlatePlugin } from '@cslate/core';
 
 import { useSlate } from 'slate-react';
-import { useMessage, getBlockProps, setBlockProps } from '@dslate/core';
-import { IconFont, Toolbar } from '@dslate/component';
+import { useMessage, getBlockProps, setBlockProps } from '@cslate/core';
+import { IconFont, Toolbar } from '@cslate/component';
 import type { Descendant } from 'slate';
 
 const DEFAULT_VALUE = 'left';

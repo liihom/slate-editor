@@ -1,5 +1,5 @@
-import type { DSlateProps } from '@dslate/core';
-import type { ProgressProps, ShowCountProps } from '@dslate/core';
+import type { DSlateProps } from '@cslate/core';
+import type { ProgressProps, ShowCountProps } from '@cslate/core';
 
 export interface SemiStyleDSlateProps extends Omit<DSlateProps, 'prefixCls'> {
   toolbar?: string[];

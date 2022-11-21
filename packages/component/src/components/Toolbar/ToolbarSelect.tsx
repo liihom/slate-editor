@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React, { useMemo } from 'react';
-import { usePlugin, usePluginHelper } from '@dslate/core';
+import { usePlugin, usePluginHelper } from '@cslate/core';
 import IconFont from '../IconFont';
 import Popover from '../Popover';
 import Tooltip from '../Tooltip';

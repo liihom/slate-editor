@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSlate } from 'slate-react';
 import { withHistory } from 'slate-history';
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 
-import { IconFont } from '@dslate/component';
-import type { DSlatePlugin } from '@dslate/core';
-import { useMessage } from '@dslate/core';
-import { Toolbar } from '@dslate/component';
+import { IconFont } from '@cslate/component';
+import type { DSlatePlugin } from '@cslate/core';
+import { useMessage } from '@cslate/core';
+import { Toolbar } from '@cslate/component';
 
 const ToolbarButton = () => {
   const editor = useSlate();

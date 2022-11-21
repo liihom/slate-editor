@@ -5,14 +5,14 @@
  * 回帖编辑器实现
  */
 import React, { useRef } from 'react';
-// import DSlate from '@dslate/dslate';
+// import DSlate from '@cslate/cslate';
 import type { Editor } from 'slate';
-// import { ConfigProvider, defaultConfig } from '@dslate/core';
+// import { ConfigProvider, defaultConfig } from '@cslate/core';
 
 // import type { UploadRequestOption } from 'rc-upload/lib/interface';
 
-// import { ClubEditor } from '@dslate/core';
-import { ClubEditor } from 'packages/dslate/src/ClubEditor';
+// import { ClubEditor } from '@cslate/core';
+import { ClubEditor } from '@cslate/cslate';
 
 import './demo.less';
 

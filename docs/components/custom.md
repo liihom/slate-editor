@@ -27,7 +27,7 @@ DSlate 是对 Slate 不包含任何样式与排版的封装，核心功能是导
 #### 引入方式
 
 ```tsx | pure
-import DSlate from '@dslate/core';
+import DSlate from '@cslate/core';
 ```
 
 #### 参数说明
@@ -45,7 +45,7 @@ import DSlate from '@dslate/core';
 #### 引入方式
 
 ```tsx | pure
-import { Toolbar, Progress, Editable, Counter } from '@dslate/component';
+import { Toolbar, Progress, Editable, Counter } from '@cslate/component';
 ```
 
 #### 参数说明
@@ -61,7 +61,7 @@ import { Toolbar, Progress, Editable, Counter } from '@dslate/component';
 #### 引入方式
 
 ```tsx | pure
-import { Progress } from '@dslate/component';
+import { Progress } from '@cslate/component';
 ```
 
 #### 参数说明
@@ -86,7 +86,7 @@ export interface ProgressProps {
 #### 引入方式
 
 ```tsx | pure
-import { Editable } from '@dslate/component';
+import { Editable } from '@cslate/component';
 ```
 
 #### 参数说明
@@ -103,7 +103,7 @@ DSlate 提供的文字计数组件。
 #### 引入方式
 
 ```tsx | pure
-import { Counter } from '@dslate/component';
+import { Counter } from '@cslate/component';
 ```
 
 #### 参数说明

@@ -1,11 +1,11 @@
 import React, { useCallback, useRef, forwardRef, useImperativeHandle, useState } from 'react';
 import type { Descendant } from 'slate';
 import DSlate from './index';
-import type { DSlateRef } from '@dslate/core';
-import { ConfigProvider, defaultConfig } from '@dslate/core';
+import type { DSlateRef } from '@cslate/core';
+import { ConfigProvider, defaultConfig } from '@cslate/core';
 
 import type { UploadRequestOption } from 'rc-upload/lib/interface';
-import { htmlToContent } from '@dslate/core/src/utils/deserialize';
+import { htmlToContent } from '@cslate/core/src/utils/deserialize';
 
 interface IProps {
   content?: string;

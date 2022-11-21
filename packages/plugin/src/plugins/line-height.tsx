@@ -1,12 +1,12 @@
 import type { CSSProperties } from 'react';
 import React from 'react';
-import { Locales } from '@dslate/core';
-import type { DSlatePlugin } from '@dslate/core';
-import { usePlugin } from '@dslate/core';
+import { Locales } from '@cslate/core';
+import type { DSlatePlugin } from '@cslate/core';
+import { usePlugin } from '@cslate/core';
 
 import { useSlate } from 'slate-react';
-import { Toolbar, IconFont } from '@dslate/component';
-import { useMessage, getTextProps, setTextProps } from '@dslate/core';
+import { Toolbar, IconFont } from '@cslate/component';
+import { useMessage, getTextProps, setTextProps } from '@cslate/core';
 import type { Descendant } from 'slate';
 
 const TYPE = 'line-height';

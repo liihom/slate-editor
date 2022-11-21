@@ -1,10 +1,10 @@
 import React from 'react';
-import { Locales } from '@dslate/core';
-import type { DSlatePlugin } from '@dslate/core';
+import { Locales } from '@cslate/core';
+import type { DSlatePlugin } from '@cslate/core';
 
 import { useSlate } from 'slate-react';
-import { useMessage, getBlockProps, setBlockProps } from '@dslate/core';
-import { IconFont, Toolbar } from '@dslate/component';
+import { useMessage, getBlockProps, setBlockProps } from '@cslate/core';
+import { IconFont, Toolbar } from '@cslate/component';
 import type { Descendant } from 'slate';
 
 const DEFAULT_VALUE = 'left';

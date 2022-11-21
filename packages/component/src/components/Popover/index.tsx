@@ -1,6 +1,6 @@
 import React from 'react';
 import Tooltip from '../Tooltip';
-import { usePluginHelper } from '@dslate/core';
+import { usePluginHelper } from '@cslate/core';
 import type { TooltipProps } from 'rc-tooltip/lib/Tooltip';
 
 const Popover = ({ ...props }: TooltipProps) => {

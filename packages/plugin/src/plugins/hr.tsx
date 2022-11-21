@@ -1,10 +1,10 @@
-import { IconFont, Popover, Toolbar } from '@dslate/component';
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
-import { isBlockActive, useMessage, usePlugin } from '@dslate/core';
+import { IconFont, Popover, Toolbar } from '@cslate/component';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import { isBlockActive, useMessage, usePlugin } from '@cslate/core';
 import type { Descendant } from 'slate';
 import { Editor, Path, Range, Transforms } from 'slate';
 import { ReactEditor, useSelected, useSlate } from 'slate-react';
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 import type { CSSProperties } from 'react';
 import { css } from '@emotion/css';
 

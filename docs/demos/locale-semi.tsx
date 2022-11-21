@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import DSlate from '@dslate/semi';
-import { ConfigProvider, defaultConfig, Locales } from '@dslate/core';
+import DSlate from '@cslate/semi';
+import { ConfigProvider, defaultConfig, Locales } from '@cslate/core';
 
 import {
   DatePicker,

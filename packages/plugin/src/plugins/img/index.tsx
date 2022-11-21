@@ -5,14 +5,14 @@ import { useSlate } from 'slate-react';
 import Upload from 'rc-upload';
 
 import Img from './img';
-import { promiseUploadFunc, usePluginHelper, useConfig } from '@dslate/core';
+import { promiseUploadFunc, usePluginHelper, useConfig } from '@cslate/core';
 
 import type { Descendant } from 'slate';
 import type { CSSProperties } from 'react';
 import type { UploadRequestOption } from 'rc-upload/lib/interface';
 
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
-import { Locales } from '@dslate/core';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import { Locales } from '@cslate/core';
 
 import './index.less';
 

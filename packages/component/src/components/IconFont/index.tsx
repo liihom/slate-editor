@@ -1,7 +1,7 @@
 import React from 'react';
 import { createFromIconfontCN } from '@ant-design/icons';
 import type { IconFontProps } from '@ant-design/icons/lib/components/IconFont';
-import { ConfigContext } from '@dslate/core';
+import { ConfigContext } from '@cslate/core';
 
 export default (props: IconFontProps) => {
   const { iconScriptUrl } = React.useContext(ConfigContext);

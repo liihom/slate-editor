@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 import { useFocused } from 'slate-react';
-import type { DSlateRef } from '@dslate/core';
-import DSlate, { usePluginHelper } from '@dslate/core';
-import { Toolbar, Progress, Editable, Counter } from '@dslate/component';
+import type { DSlateRef } from '@cslate/core';
+import DSlate, { usePluginHelper } from '@cslate/core';
+import { Toolbar, Progress, Editable, Counter } from '@cslate/component';
 
 import type { SemiStyleDSlateProps } from '../typing';
 

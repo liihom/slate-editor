@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePluginHelper } from '@dslate/core';
+import { usePluginHelper } from '@cslate/core';
 
 export default () => {
   const { getPrefixCls, percent } = usePluginHelper();

@@ -21,9 +21,9 @@ import React from 'react';
 import { useSlate } from 'slate-react';
 import locale from '../locale';
 
-import { IconFont, Toolbar } from '@dslate/component';
-import type { DSlatePlugin } from '@dslate/core';
-import { getTextProps, toggleTextProps, useMessage } from '@dslate/core';
+import { IconFont, Toolbar } from '@cslate/component';
+import type { DSlatePlugin } from '@cslate/core';
+import { getTextProps, toggleTextProps, useMessage } from '@cslate/core';
 
 const TYPE = 'bold';
 

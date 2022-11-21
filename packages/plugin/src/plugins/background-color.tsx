@@ -1,13 +1,13 @@
 import React from 'react';
 import { TwitterPicker } from 'react-color';
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 
 import { useSlate } from 'slate-react';
-import { Toolbar, IconFont } from '@dslate/component';
-import { usePlugin, useMessage, getTextProps, setTextProps } from '@dslate/core';
+import { Toolbar, IconFont } from '@cslate/component';
+import { usePlugin, useMessage, getTextProps, setTextProps } from '@cslate/core';
 
 import type { Descendant } from 'slate';
-import type { DSlatePlugin } from '@dslate/core';
+import type { DSlatePlugin } from '@cslate/core';
 
 const DEFAULT_COLOR = undefined;
 const TYPE = 'background-color';

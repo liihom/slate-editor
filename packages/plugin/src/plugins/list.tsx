@@ -1,15 +1,15 @@
 import type { CSSProperties } from 'react';
 import React, { useMemo } from 'react';
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
-import { usePlugin } from '@dslate/core';
-import { isEmpty } from '@dslate/core';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import { usePlugin } from '@cslate/core';
+import { isEmpty } from '@cslate/core';
 
 import { useSlate } from 'slate-react';
-import { Toolbar, IconFont } from '@dslate/component';
-import { useMessage, getBlockProps, isBlockActive, isStart } from '@dslate/core';
+import { Toolbar, IconFont } from '@cslate/component';
+import { useMessage, getBlockProps, isBlockActive, isStart } from '@cslate/core';
 import { Editor, Transforms, Range, Path } from 'slate';
 
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 import { TextIndentPlugin } from './indent';
 
 export const TYPE = 'list';

@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
 import type { NodeEntry, Descendant } from 'slate';
-import { Locales } from '@dslate/core';
+import { Locales } from '@cslate/core';
 
 import { Editor, Element, Transforms, Node, Text } from 'slate';
 import { useSlate } from 'slate-react';
-import { Toolbar } from '@dslate/component';
-import { usePluginHelper, useMessage } from '@dslate/core';
+import { Toolbar } from '@cslate/component';
+import { usePluginHelper, useMessage } from '@cslate/core';
 import type {
   DSlateCustomElement,
   DSlatePlugin,
   NormalizeNode,
   RenderElementPropsWithStyle,
-} from '@dslate/core';
-import { parseStyles } from '@dslate/core/src/utils/deserialize';
+} from '@cslate/core';
+import { parseStyles } from '@cslate/core/src/utils/deserialize';
 
 const TYPE = 'paragraph';
 const DEFAULT_TYPE = 'paragraph';
