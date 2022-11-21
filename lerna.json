@@ -3,7 +3,7 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "changelog": {
-    "repo": "rojer95/dslate",
+    "repo": "slate-editor",
     "cacheDir": ".changelog"
   },
   "ignoreChanges": [
