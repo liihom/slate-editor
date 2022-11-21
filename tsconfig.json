@@ -14,10 +14,12 @@
     "skipLibCheck": true,
     "paths": {
       "@dslate/core": ["./packages/core/src/index.tsx"],
+      "@auto/slate-club": ["./packages/core/src/components/DSlate/ClubEditor.tsx"],
       "@dslate/plugin": ["./packages/plugin/src/index.tsx"],
       "@dslate/component": ["./packages/component/src/index.tsx"],
       "@dslate/dslate": ["./packages/dslate/src/index.tsx"],
-      "@dslate/semi": ["./packages/semi/src/index.tsx"]
+      "@dslate/semi": ["./packages/semi/src/index.tsx"],
+      "@dslate": ["./packages"],
     }
   },
   "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]

@@ -1,0 +1,77 @@
+.reply_bottom_editor {
+  padding: 28px 0;
+}
+
+.editor_container {
+  position: relative;
+  font-size: 14px;
+  p {
+    margin: 4px 0;
+    line-height: 2;
+  }
+}
+
+.bbs_subtitle {
+  position: relative;
+  line-height: 26px;
+  &_name {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &_link {
+    float: right;
+    color: #111e36;
+    &:hover {
+      color: #f60;
+    }
+  }
+}
+
+.btn_group {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  display: flex;
+  .btn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 90px;
+    height: 40px;
+    padding: 0;
+    margin-left: 8px;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    &_blue {
+      color: #fff;
+      background-color: #05f;
+      border-color: #05f;
+      &:hover {
+        color: #fff;
+        background-color: #37f;
+        border-color: #37f;
+      }
+      &:active {
+        background-color: #04d;
+        border-color: #04d;
+      }
+    }
+    &_blue_outline {
+      color: #05f;
+      background-color: #fff;
+      border-color: rgba(#05f, 0.4);
+      &:hover {
+        color: #05f;
+        border-color: rgba(#05f, 0.8);
+      }
+      &:active {
+        background-color: rgba(#05f, 0.04);
+        border-color: rgba(#05f, 0.8);
+      }
+    }
+  }
+}

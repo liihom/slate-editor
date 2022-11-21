@@ -22,4 +22,15 @@ export default defineConfig({
     sassOptions: {},
   },
   // more config: https://d.umijs.org/config
+  devServer: {
+    proxy: {
+      '/frontapi': {
+        changeOrigin: true,
+        target: 'https://club.autohome.com.cn',
+        pathRewrite: {
+          '^/frontapi': '/frontapi',
+        },
+      },
+    },
+  },
 });

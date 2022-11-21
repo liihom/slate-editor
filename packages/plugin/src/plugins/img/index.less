@@ -55,4 +55,25 @@
       }
     }
   }
+
 }
+
+.editor_menu_item {
+  position: relative;
+  cursor: pointer;
+  svg {
+    display: block;
+    transition: all 0.2s;
+    &:hover {
+      fill: #ff6600;
+    }
+  }
+  &.disabled svg {
+    cursor: not-allowed;
+    fill: #ccc;
+    &:hover {
+      fill: #ccc;
+    }
+  }
+}
+

@@ -4,6 +4,7 @@ import type { DSlatePlugin } from '@dslate/core';
 
 interface ToolbarItemProps {
   plugin: DSlatePlugin;
+  children: React.ReactNode;
 }
 
 const ToolbarItem: React.FC<ToolbarItemProps> = ({ children, plugin }) => {

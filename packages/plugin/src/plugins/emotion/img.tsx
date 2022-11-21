@@ -2,7 +2,7 @@
 import classNames from 'classnames';
 import React, { useEffect, useRef, useState } from 'react';
 import { ReactEditor, useSelected, useSlate } from 'slate-react';
-import { Rnd } from 'react-rnd';
+import type { Rnd } from 'react-rnd';
 import { usePluginHelper, useConfig, promiseUploadFunc, usePlugin } from '@dslate/core';
 import type { RenderElementPropsWithStyle } from '@dslate/core';
 import { Transforms } from 'slate';

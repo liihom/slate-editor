@@ -1,7 +1,7 @@
 import React, { forwardRef, useContext } from 'react';
 import classNames from 'classnames';
 import { ConfigProvider as AntdConfigProvider } from 'antd';
-import { useFocused } from 'slate-react';
+// import { useFocused } from 'slate-react';
 import SizeContext from 'antd/lib/config-provider/SizeContext';
 
 import type { DSlateRef } from '@dslate/core';
@@ -18,10 +18,11 @@ const AntdStyleEditor = ({
   showCount = false,
   disabled = false,
   placeholder,
+  renderPlaceholder,
   toolbar,
   className,
 }: Omit<AntdStyleDSlateProps, 'value' | 'onChange'>) => {
-  const focused = useFocused();
+  // const focused = useFocused();
   const { getPrefixCls } = usePluginHelper();
   const prefixCls = getPrefixCls?.('');
 
@@ -36,12 +37,16 @@ const AntdStyleEditor = ({
               [`${prefixCls}-lg`]: realSize === 'large',
               [`${prefixCls}-disabled`]: disabled,
               [`${prefixCls}-borderless`]: !bordered,
-              [`${prefixCls}-focused`]: focused,
+              // [`${prefixCls}-focused`]: focused,
             })}
           >
-            <Toolbar toolbar={toolbar} />
             <Progress />
-            <Editable disabled={disabled} placeholder={placeholder} />
+            <Editable
+              disabled={disabled}
+              placeholder={placeholder}
+              renderPlaceholder={renderPlaceholder}
+            />
+            <Toolbar toolbar={toolbar} />
             <Counter showCount={showCount} />
           </div>
         );
@@ -51,6 +56,8 @@ const AntdStyleEditor = ({
 };
 
 export default forwardRef<DSlateRef, AntdStyleDSlateProps>(({ value, onChange, ...rest }, ref) => {
+  // todo 类型推断
+  // @ts-ignore
   const { getPrefixCls: getAntdPrefixCls } = useContext(AntdConfigProvider.ConfigContext);
   return (
     <DSlate ref={ref} value={value} onChange={onChange} prefixCls={getAntdPrefixCls('dslate')}>

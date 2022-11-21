@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import type { NodeEntry } from 'slate';
+import type { NodeEntry, Descendant } from 'slate';
 import { Locales } from '@dslate/core';
 
 import { Editor, Element, Transforms, Node, Text } from 'slate';
@@ -12,6 +12,7 @@ import type {
   NormalizeNode,
   RenderElementPropsWithStyle,
 } from '@dslate/core';
+import { parseStyles } from '@dslate/core/src/utils/deserialize';
 
 const TYPE = 'paragraph';
 const DEFAULT_TYPE = 'paragraph';
@@ -97,6 +98,13 @@ const ToolbarButton = () => {
   );
 };
 
+const renderStyle = (el: Descendant) => {
+  if (el.style) {
+    return parseStyles(el.style) || {};
+  }
+  return {};
+};
+
 const renderElement = (props: RenderElementPropsWithStyle) => {
   const { attributes, children, element, style } = props;
 
@@ -133,9 +141,9 @@ const renderElement = (props: RenderElementPropsWithStyle) => {
   }
 
   return (
-    <div {...attributes} style={style}>
+    <p {...attributes} style={style}>
       {children}
-    </div>
+    </p>
   );
 };
 
@@ -168,6 +176,7 @@ const ParagraphPlugin: DSlatePlugin = {
   renderElement,
   normalizeNode,
   isDefaultElement: true,
+  renderStyle,
   locale: [
     {
       locale: Locales.zhCN,
@@ -190,7 +199,7 @@ const ParagraphPlugin: DSlatePlugin = {
   ],
   serialize: (element, props, children) => {
     const isEmpty = Node.string(element) === '';
-    let tag = 'div';
+    let tag = 'p';
     if (element?.[PROPS_KEY] === 'h1') {
       tag = 'h1';
     }
@@ -206,6 +215,7 @@ const ParagraphPlugin: DSlatePlugin = {
     if (element?.[PROPS_KEY] === 'h4') {
       tag = 'h4';
     }
+
     return `<${tag} style="${props?.style ?? ''}">${children.join('')}${
       isEmpty ? '&nbsp;' : ''
     }</${tag}>`;

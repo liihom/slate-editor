@@ -1,8 +1,8 @@
 import React from 'react';
 import { Editor, Node, Path, Point, Range, Text, Transforms } from 'slate';
 import { Locales } from '@dslate/core';
-import { ReactEditor, useSelected, useSlate } from 'slate-react';
-import { IconFont, Toolbar, Popover, Input } from '@dslate/component';
+import { useSlate } from 'slate-react';
+import { IconFont, Toolbar } from '@dslate/component';
 import { isBlockActive, useMessage } from '@dslate/core';
 import type { NodeEntry } from 'slate';
 import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@dslate/core';
@@ -56,57 +56,9 @@ const ToolbarButton = () => {
 };
 
 const Link = ({ attributes, element, children }: RenderElementPropsWithStyle) => {
-  const selected = useSelected();
-  const editor = useSlate();
-  const path = ReactEditor.findPath(editor, element);
-  const getMessage = useMessage();
-
   return (
     <a {...attributes} href={element.href}>
-      <Popover
-        visible={selected}
-        placement="top"
-        overlayInnerStyle={{
-          padding: 12,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
-          whiteSpace: 'nowrap',
-          width: 'max-content',
-        }}
-        overlay={
-          <>
-            <div>{getMessage('link', '链接')}：</div>
-            <Input
-              value={element.href}
-              onChange={(e) => {
-                Transforms.setNodes(
-                  editor,
-                  {
-                    href: e.target.value,
-                  },
-                  {
-                    at: path,
-                  },
-                );
-              }}
-            />
-            <Toolbar.Button
-              tooltip={getMessage('clear', '清除链接')}
-              onClick={() => {
-                Transforms.unwrapNodes(editor, {
-                  at: path,
-                  split: true,
-                });
-              }}
-            >
-              <IconFont type="icon-empty" />
-            </Toolbar.Button>
-          </>
-        }
-      >
-        <>{children}</>
-      </Popover>
+      {children}
     </a>
   );
 };

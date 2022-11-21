@@ -1,14 +1,11 @@
 {
   "name": "@dslate/core",
   "version": "1.0.9",
-  "description": "一个Ant Design风格的富文本编辑器 - An Ant Design style rich editor based on Slate",
+  "description": "论坛回帖富文本编辑器",
   "keywords": [
-    "wysiwyg",
     "rich-editor",
-    "ant-design",
     "slate",
-    "slate-react",
-    "dslate"
+    "slate-react"
   ],
   "sideEffects": [
     "*.less"

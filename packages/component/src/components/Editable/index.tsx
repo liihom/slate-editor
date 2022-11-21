@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback } from 'react';
 import { DefaultElement, Editable, useSlate } from 'slate-react';
+import type { RenderPlaceholderProps } from 'slate-react';
 import {
   PluginUuidContext,
   usePluginHelper,
@@ -14,9 +15,10 @@ import type { DSlatePlugin, RenderElementPropsWithStyle } from '@dslate/core';
 interface EditableProps {
   disabled?: boolean;
   placeholder?: string;
+  renderPlaceholder?: (props: RenderPlaceholderProps) => JSX.Element;
 }
 
-export default ({ disabled = false, placeholder }: EditableProps) => {
+export default ({ disabled = false, placeholder, renderPlaceholder }: EditableProps) => {
   const { plugins } = useConfig();
   const { setVisibleKey, getPrefixCls } = usePluginHelper();
   const editor = useSlate();
@@ -62,7 +64,8 @@ export default ({ disabled = false, placeholder }: EditableProps) => {
     return dom ?? <DefaultElement {...props} />;
   }, []);
 
-  const renderLeaf = useCallback((props) => {
+  // todo renderLeaf 类型
+  const renderLeaf = useCallback((props: any) => {
     const { attributes, children, leaf } = props;
     const needRenderPlugin = plugins.find(
       (i: DSlatePlugin) => i.nodeType === 'text' && i.type in leaf && !!i.renderLeaf,
@@ -100,6 +103,7 @@ export default ({ disabled = false, placeholder }: EditableProps) => {
       onKeyDown={onKeyDown}
       readOnly={disabled}
       placeholder={placeholder ?? getMessage('placeholder', '')}
+      renderPlaceholder={renderPlaceholder}
     />
   );
 };

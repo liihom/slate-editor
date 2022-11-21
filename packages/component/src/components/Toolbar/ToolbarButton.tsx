@@ -9,6 +9,7 @@ export type ToolbarButtonProps = {
   onClick?: () => void;
   tooltip?: string;
   className?: string;
+  children?: React.ReactNode;
 };
 
 const ToolbarButton: React.FC<ToolbarButtonProps> = ({
