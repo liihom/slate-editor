@@ -1,6 +1,6 @@
 {
   "name": "@cslate/semi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "一个Semi Design风格的富文本编辑器 - A Semi Design style rich editor based on Slate",
   "keywords": [
     "antd",
