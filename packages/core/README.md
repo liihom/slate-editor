@@ -1,17 +1,17 @@
-# dslate
+# cslate
 
-See our website [dslate](http://rojer95.github.io/dslate) for more information.
+See our website [cslate](http://rojer95.github.io/cslate) for more information.
 
 ## Install
 
 Using npm:
 
 ```bash
-$ npm install --save  @dslate/core
+$ npm install --save  @cslate/core
 ```
 
 or using yarn:
 
 ```bash
-$ yarn add  @dslate/core
+$ yarn add  @cslate/core
 ```

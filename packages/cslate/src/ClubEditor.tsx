@@ -14,17 +14,9 @@ interface IProps {
   uploadImgServer: string;
 }
 
-const PLACEHOLDER_TEXT =
-  '汽车之家温馨提示您：回复中请不要恶意攻击论坛用户与工作人员，不要发布任何广告性质的回复，我们会第一时间处理违规用户与内容';
-
 const ClubEditor = forwardRef(
   (
-    {
-      content,
-      placeholder = PLACEHOLDER_TEXT,
-      toolbar = ['img', 'emotion'],
-      uploadImgServer,
-    }: IProps,
+    { content, placeholder = '请输入内容', toolbar = ['img', 'emotion'], uploadImgServer }: IProps,
     ref,
   ) => {
     const initValue = htmlToContent(content || '');

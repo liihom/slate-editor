@@ -1,19 +1,13 @@
 /**
  * defaultShowCode: true
  */
-/**
- * 回帖编辑器实现
- */
+
 import React, { useRef } from 'react';
 import type { Editor } from 'slate';
 
-// import { ClubEditor } from '@cslate/cslate';
-import ClubEditor from '@cslate/cslate';
+import { ClubEditor } from '@cslate/cslate';
 
 import './demo.less';
-
-const PLACEHOLDER_TEXT =
-  '汽车之家温馨提示您：回复中请不要恶意攻击论坛用户与工作人员，不要发布任何广告性质的回复，我们会第一时间处理违规用户与内容';
 
 export default () => {
   const ref = useRef<{
@@ -24,24 +18,17 @@ export default () => {
   return (
     <div className="reply_bottom_editor">
       <div className="editor_container">
-        <div className="bbs_subtitle">
-          <a
-            className="bbs_subtitle_link"
-            href="//club.autohome.com.cn/Help/UserHelpRlue#rule"
-            target="_blank"
-            rel="noreferrer"
-          >
-            汽车之家论坛规范公示&gt;
+        <div className="subtitle">
+          <a className="subtitle_link" href="###" target="_blank" rel="noreferrer">
+            标题标题标题
           </a>
-          <h4 className="bbs_subtitle_name">回复主楼</h4>
+          <h4 className="subtitle_name">回复</h4>
         </div>
         <ClubEditor
           ref={ref}
-          value={[{ text: '' }]}
           content={'啊哈哈哈'}
           // toolbar={['emotion']}
-          placeholder={PLACEHOLDER_TEXT}
-          uploadImgServer="/frontapi/upload/uptoalbum"
+          uploadImgServer="###"
         />
         <div className="btn_group">
           <div className="btn btn_blue_outline">取消修改</div>

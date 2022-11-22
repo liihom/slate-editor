@@ -1,102 +1,94 @@
-import React, { useEffect } from 'react';
-import type { NodeEntry, Descendant } from 'slate';
+import React from 'react';
+import type { NodeEntry, Descendant, Editor } from 'slate';
 import { Locales } from '@cslate/core';
 
-import { Editor, Element, Transforms, Node, Text } from 'slate';
-import { useSlate } from 'slate-react';
-import { Toolbar } from '@cslate/component';
-import { usePluginHelper, useMessage } from '@cslate/core';
-import type {
-  DSlateCustomElement,
-  DSlatePlugin,
-  NormalizeNode,
-  RenderElementPropsWithStyle,
-} from '@cslate/core';
+import { Transforms, Node, Text } from 'slate';
+import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@cslate/core';
 import { parseStyles } from '@cslate/core/src/utils/deserialize';
 
 const TYPE = 'paragraph';
-const DEFAULT_TYPE = 'paragraph';
+// const DEFAULT_TYPE = 'paragraph';
 const PROPS_KEY = 'paragraphType';
 
-type TYPES = 'paragraph' | 'h1' | 'h2' | 'h3' | 'h4';
+// type TYPES = 'paragraph' | 'h1' | 'h2' | 'h3' | 'h4';
 
-const getActvieType = (editor: Editor): TYPES => {
-  const { selection } = editor;
-  if (!selection) return DEFAULT_TYPE;
+// const getActvieType = (editor: Editor): TYPES => {
+//   const { selection } = editor;
+//   if (!selection) return DEFAULT_TYPE;
 
-  const [match] = Editor.nodes<DSlateCustomElement>(editor, {
-    match: (n) => Element.isElement(n) && n.type === TYPE,
-  });
+//   const [match] = Editor.nodes<DSlateCustomElement>(editor, {
+//     match: (n) => Element.isElement(n) && n.type === TYPE,
+//   });
 
-  if (match) {
-    return match[0]?.[PROPS_KEY] ?? DEFAULT_TYPE;
-  }
+//   if (match) {
+//     return match[0]?.[PROPS_KEY] ?? DEFAULT_TYPE;
+//   }
 
-  return DEFAULT_TYPE;
-};
+//   return DEFAULT_TYPE;
+// };
 
-const setType = (editor: Editor, paragraphType: TYPES) => {
-  if (!editor.selection) return;
-  Transforms.setNodes(editor, { type: TYPE, [PROPS_KEY]: paragraphType });
-};
+// const setType = (editor: Editor, paragraphType: TYPES) => {
+//   if (!editor.selection) return;
+//   Transforms.setNodes(editor, { type: TYPE, [PROPS_KEY]: paragraphType });
+// };
 
-const ToolbarButton = () => {
-  const editor = useSlate();
+// const ToolbarButton = () => {
+//   const editor = useSlate();
 
-  const onChange = (type: TYPES) => {
-    setType(editor, type);
-  };
+//   const onChange = (type: TYPES) => {
+//     setType(editor, type);
+//   };
 
-  const activeType = getActvieType(editor);
+//   const activeType = getActvieType(editor);
 
-  const getMessage = useMessage();
-  const { disablePluginByType, enablePluginByType } = usePluginHelper();
+//   const getMessage = useMessage();
+//   const { disablePluginByType, enablePluginByType } = usePluginHelper();
 
-  useEffect(() => {
-    if (activeType !== 'paragraph') {
-      disablePluginByType?.(['bold', 'font-size']);
-    } else {
-      enablePluginByType?.(['bold', 'font-size']);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeType]);
+//   useEffect(() => {
+//     if (activeType !== 'paragraph') {
+//       disablePluginByType?.(['bold', 'font-size']);
+//     } else {
+//       enablePluginByType?.(['bold', 'font-size']);
+//     }
+//     // eslint-disable-next-line react-hooks/exhaustive-deps
+//   }, [activeType]);
 
-  return (
-    <Toolbar.Select<TYPES>
-      placeholder={getMessage('paragraph', '正文')}
-      onChange={onChange}
-      options={[
-        {
-          value: 'paragraph',
-          label: getMessage('paragraph', '正文'),
-          placeholder: getMessage('paragraph', '正文'),
-        },
-        {
-          value: 'h1',
-          label: <h1 style={{ margin: 0 }}>{getMessage('h1', '标题1')}</h1>,
-          placeholder: getMessage('h1', '标题1'),
-        },
-        {
-          value: 'h2',
-          label: <h2 style={{ margin: 0 }}>{getMessage('h2', '标题2')}</h2>,
-          placeholder: getMessage('h2', '标题2'),
-        },
-        {
-          value: 'h3',
-          label: <h3 style={{ margin: 0 }}>{getMessage('h3', '标题3')}</h3>,
-          placeholder: getMessage('h3', '标题3'),
-        },
-        {
-          value: 'h4',
-          label: <h4 style={{ margin: 0 }}>{getMessage('h4', '标题4')}</h4>,
-          placeholder: getMessage('h4', '标题4'),
-        },
-      ]}
-      tooltip={getMessage('tooltip', '段落与标题')}
-      value={activeType}
-    />
-  );
-};
+//   return (
+//     <Toolbar.Select<TYPES>
+//       placeholder={getMessage('paragraph', '正文')}
+//       onChange={onChange}
+//       options={[
+//         {
+//           value: 'paragraph',
+//           label: getMessage('paragraph', '正文'),
+//           placeholder: getMessage('paragraph', '正文'),
+//         },
+//         {
+//           value: 'h1',
+//           label: <h1 style={{ margin: 0 }}>{getMessage('h1', '标题1')}</h1>,
+//           placeholder: getMessage('h1', '标题1'),
+//         },
+//         {
+//           value: 'h2',
+//           label: <h2 style={{ margin: 0 }}>{getMessage('h2', '标题2')}</h2>,
+//           placeholder: getMessage('h2', '标题2'),
+//         },
+//         {
+//           value: 'h3',
+//           label: <h3 style={{ margin: 0 }}>{getMessage('h3', '标题3')}</h3>,
+//           placeholder: getMessage('h3', '标题3'),
+//         },
+//         {
+//           value: 'h4',
+//           label: <h4 style={{ margin: 0 }}>{getMessage('h4', '标题4')}</h4>,
+//           placeholder: getMessage('h4', '标题4'),
+//         },
+//       ]}
+//       tooltip={getMessage('tooltip', '段落与标题')}
+//       value={activeType}
+//     />
+//   );
+// };
 
 const renderStyle = (el: Descendant) => {
   if (el.style) {
@@ -172,7 +164,7 @@ const normalizeNode = (entry: NodeEntry, editor: Editor, next: NormalizeNode) =>
 const ParagraphPlugin: DSlatePlugin = {
   type: TYPE,
   nodeType: 'element',
-  toolbar: <ToolbarButton />,
+  // toolbar: <ToolbarButton />,
   renderElement,
   normalizeNode,
   isDefaultElement: true,

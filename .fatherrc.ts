@@ -16,7 +16,7 @@ let config = {};
 if (type === 'lib') {
   config = {
     cjs: { type: 'babel', lazy: true },
-    esm: false,
+    esm: 'false',
     runtimeHelpers: true,
     pkgs: [...headPkgs, ...tailPkgs],
     extraBabelPlugins: [
@@ -37,6 +37,7 @@ if (type === 'es') {
       [require('./scripts/replaceLib')],
       ['babel-plugin-import', { libraryName: 'antd', libraryDirectory: 'es', style: true }, 'antd'],
     ],
+    // lessInBabelMode: true, // less 转 css
   };
 }
 

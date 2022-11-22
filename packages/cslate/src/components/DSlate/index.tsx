@@ -60,7 +60,7 @@ export default forwardRef<DSlateRef, AntdStyleDSlateProps>(({ value, onChange, .
   // @ts-ignore
   const { getPrefixCls: getAntdPrefixCls } = useContext(AntdConfigProvider.ConfigContext);
   return (
-    <DSlate ref={ref} value={value} onChange={onChange} prefixCls={getAntdPrefixCls('dslate')}>
+    <DSlate ref={ref} value={value} onChange={onChange} prefixCls={getAntdPrefixCls('cslate')}>
       <AntdStyleEditor {...rest} />
     </DSlate>
   );

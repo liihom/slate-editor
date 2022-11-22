@@ -2,8 +2,9 @@
 import classNames from 'classnames';
 import React, { useEffect, useRef, useState } from 'react';
 import { ReactEditor, useSelected, useSlate } from 'slate-react';
-import { Rnd } from 'react-rnd';
-import { usePluginHelper, useConfig, promiseUploadFunc, usePlugin } from '@cslate/core';
+// import type { Rnd } from 'react-rnd';
+// import { usePluginHelper, useConfig, usePlugin } from '@cslate/core';
+import { usePlugin } from '@cslate/core';
 import type { RenderElementPropsWithStyle } from '@cslate/core';
 import { Transforms } from 'slate';
 
@@ -13,7 +14,7 @@ type Draggable = {
   height?: number;
 };
 
-const prefixCls = 'dslate-img-element';
+const prefixCls = 'cslate-img-element';
 
 type Size = { width: string; height: string };
 
@@ -38,24 +39,16 @@ const resize = (origin: Size, fixBy: 'width' | 'height', value: string): Size =>
 };
 
 const Img = ({ attributes, children, element, style }: RenderElementPropsWithStyle) => {
-  const { setPercent } = usePluginHelper();
-  const { customUploadRequest } = useConfig();
+  // const { setPercent } = usePluginHelper();
+  // const { customUploadRequest } = useConfig();
   const { props } = usePlugin();
 
   const image = useRef<HTMLImageElement>(null);
-  const rnd = useRef<Rnd>(null);
+  // const rnd = useRef<Rnd>(null);
   const [loading, setLoading] = useState(false);
 
   const [draggable, setDraggable] = useState<Draggable>({
     status: false,
-  });
-
-  const [editable, setEditable] = useState<{
-    width: string;
-    height: string;
-  }>({
-    width: '',
-    height: '',
   });
 
   useEffect(() => {
@@ -90,17 +83,17 @@ const Img = ({ attributes, children, element, style }: RenderElementPropsWithSty
   // };
 
   useEffect(() => {
-    if (selected) {
-      /**
-       * 选中状态下，优先同步参数宽度，其次同步实际宽高到编辑框
-       */
-      const width = element.imgWidth ?? image.current?.width ?? '';
-      const height = element.imgHeight ?? image.current?.height ?? '';
-      setEditable({
-        width: width,
-        height: height,
-      });
-    }
+    // if (selected) {
+    //   /**
+    //    * 选中状态下，优先同步参数宽度，其次同步实际宽高到编辑框
+    //    */
+    //   const width = element.imgWidth ?? image.current?.width ?? '';
+    //   const height = element.imgHeight ?? image.current?.height ?? '';
+    //   setEditable({
+    //     width: width,
+    //     height: height,
+    //   });
+    // }
 
     /**
      * 同步图片实际宽高到拖拽组件
@@ -129,10 +122,10 @@ const Img = ({ attributes, children, element, style }: RenderElementPropsWithSty
     if (element.imgWidth) width = element.imgWidth;
     if (element.imgHeight) height = element.imgHeight;
 
-    setEditable({
-      width: width,
-      height: height,
-    });
+    // setEditable({
+    //   width: width,
+    //   height: height,
+    // });
 
     setDraggable({
       ...draggable,

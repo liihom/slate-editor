@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'DSlate',
+  title: 'CSlate',
   outputPath: 'docs-dist',
   publicPath: '/cslate/',
   history: {
@@ -12,7 +12,7 @@ export default defineConfig({
     null, // null 值代表保留约定式生成的导航，只做增量配置
     {
       title: 'GitHub',
-      path: 'https://github.com/rojer95/dslate',
+      path: 'https://github.com/liihom/slate-editor',
     },
   ],
   sass: {
@@ -22,15 +22,5 @@ export default defineConfig({
     sassOptions: {},
   },
   // more config: https://d.umijs.org/config
-  devServer: {
-    proxy: {
-      '/frontapi': {
-        changeOrigin: true,
-        target: 'https://club.autohome.com.cn',
-        pathRewrite: {
-          '^/frontapi': '/frontapi',
-        },
-      },
-    },
-  },
+  devServer: {},
 });

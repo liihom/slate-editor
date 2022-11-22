@@ -21,7 +21,7 @@ export type DSlateRef = {
 };
 
 const DSlate = forwardRef<DSlateRef, PropsWithChildren<DSlateProps>>(
-  ({ value, onChange, prefixCls = 'dslate', children }, ref) => {
+  ({ value, onChange, prefixCls = 'cslate', children }, ref) => {
     const { plugins = [], pluginProps } = useConfig();
     // eslint-disable-next-line react-hooks/exhaustive-deps
     const editor = useMemo(() => withPlugins(withReact(createEditor()), plugins), []);

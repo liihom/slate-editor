@@ -6,7 +6,7 @@ import { usePlugin } from '@cslate/core';
 import type { RenderElementPropsWithStyle } from '@cslate/core';
 import { Transforms } from 'slate';
 
-const prefixCls = 'dslate-img-element';
+const prefixCls = 'cslate-img-element';
 
 type Size = { width: string; height: string };
 

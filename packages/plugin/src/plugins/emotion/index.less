@@ -2,7 +2,7 @@
 @primary-color: #1890ff;
 @primary-color-outline: fade(@primary-color, @outline-fade);
 
-@dslate-img-prefix-cls: ~'dslate-img-element';
+@dslate-img-prefix-cls: ~'cslate-img-element';
 
 .resize-handle-wrapper {
   > div {
@@ -62,28 +62,29 @@
 }
 
 .menu_panel_container {
-  width: 422px;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 900;
-  border-top: 0;
-  box-shadow: 0 0 10px #f1f1f1;
+  width: 422px;
   color: #333;
   background-color: #fff;
+  border-top: 0;
+  box-shadow: 0 0 10px #f1f1f1;
   cursor: default;
-  ul, li {
-    padding: 0;
+  ul,
+  li {
     margin-top: 0;
+    padding: 0;
   }
   .menu_panel_close {
     position: absolute;
-    right: 0;
     top: 8px;
-    padding: 5px;
+    right: 0;
     margin-right: 5px;
-    cursor: pointer;
+    padding: 5px;
     color: #999;
+    cursor: pointer;
     transition: transform 0.25s;
 
     &:hover {
@@ -92,41 +93,41 @@
     }
   }
   .menu_panel_tab_title {
-    list-style: none;
-    font-size: 14px;
     margin: 2px 10px 0 10px;
-    border-bottom: 1px solid #f1f1f1;
     overflow: hidden;
+    font-size: 14px;
+    list-style: none;
+    border-bottom: 1px solid #f1f1f1;
 
     .menu_panel_item {
-      float: left;
-      height: 40px;
-      line-height: 40px;
-      padding: 0 5px;
-      color: #999;
-      cursor: pointer;
-      margin: 0 3px;
       position: relative;
       top: 1px;
+      float: left;
+      height: 40px;
+      margin: 0 3px;
+      padding: 0 5px;
+      color: #999;
+      line-height: 40px;
+      cursor: pointer;
     }
 
     .menu_panel_item_active {
       color: #333;
+      font-weight: 700;
       border-bottom: 1px solid #333;
       cursor: default;
-      font-weight: 700;
     }
   }
 
   .menu_panel_tab_content {
     height: 230px;
-    overflow-y: auto;
+    height: 230px;
 
     padding: 10px 15px 10px 15px;
+    overflow-y: auto;
+    overflow-y: auto;
     font-size: 16px;
     text-align: left;
-    height: 230px;
-    overflow-y: auto;
 
     /* 输入框的样式 */
     input,
@@ -138,20 +139,20 @@
     }
     textarea {
       width: 100%;
-      border: 1px solid #ccc;
       padding: 5px;
+      border: 1px solid #ccc;
 
       &:focus {
         border-color: #1e88e5;
       }
     }
     input[type='text'] {
-      border: none;
-      border-bottom: 1px solid #ccc;
-      font-size: 14px;
       height: 20px;
       color: #333;
+      font-size: 14px;
       text-align: left;
+      border: none;
+      border-bottom: 1px solid #ccc;
     }
     input[type='text'].small {
       width: 30px;
@@ -171,13 +172,13 @@
     /* 按钮的样式 */
     .w-e-button-container {
       button {
-        font-size: 14px;
-        color: #1e88e5;
-        border: none;
         padding: 5px 10px;
+        color: #1e88e5;
+        font-size: 14px;
         background-color: #fff;
-        cursor: pointer;
+        border: none;
         border-radius: 3px;
+        cursor: pointer;
       }
       button.left {
         float: left;
@@ -202,9 +203,9 @@
       }
     }
     .menu_panel_button_container:after {
-      content: '';
       display: table;
       clear: both;
+      content: '';
     }
   }
 
@@ -213,8 +214,8 @@
     overflow: hidden;
     .item {
       float: left;
-      font-size: 18px;
       margin: 3px 2px;
+      font-size: 18px;
       cursor: pointer;
       img {
         display: block;
@@ -229,9 +230,9 @@
     .menu_panel_up_btn {
       display: inline-block;
       color: #999;
-      cursor: pointer;
       font-size: 60px;
       line-height: 1;
+      cursor: pointer;
 
       &:hover {
         color: #333;
