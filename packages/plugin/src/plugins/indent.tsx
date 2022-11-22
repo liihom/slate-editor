@@ -6,13 +6,11 @@ import type { DSlatePlugin } from '@cslate/core';
 import { useSlate } from 'slate-react';
 import { Toolbar } from '@cslate/component';
 import { useMessage, getBlockProps, setBlockProps, clearBlockProps } from '@cslate/core';
-import { IconFont } from '@cslate/component';
 import { Editor, Range } from 'slate';
 import type { Descendant } from 'slate';
 
 const DEFAULT_VALUE = 0;
 const TYPE = 'text-indent';
-const iconStyle = { opacity: 0.7, fontSize: '93%' };
 
 const renderStyle = (element: Descendant) => {
   if (!!element[TYPE]) {
@@ -46,14 +44,14 @@ const ToolbarButton = () => {
         onClick={() => increase(editor)}
         tooltip={getMessage('indent.tooltip', '增加缩进')}
       >
-        <IconFont type="icon-indent" style={iconStyle} />
+        {/* <IconFont type="icon-indent" style={iconStyle} /> */}
       </Toolbar.Button>
       <Toolbar.Button
         onClick={() => decrease(editor)}
         tooltip={getMessage('outdent.tooltip', '减少缩进')}
         disabled={getBlockProps(editor, TYPE, DEFAULT_VALUE) === 0}
       >
-        <IconFont type="icon-outdent" style={iconStyle} />
+        {/* <IconFont type="icon-outdent" style={iconStyle} /> */}
       </Toolbar.Button>
     </>
   );

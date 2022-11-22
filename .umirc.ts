@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   title: 'DSlate',
   outputPath: 'docs-dist',
-  publicPath: '/dslate/',
+  publicPath: '/cslate/',
   history: {
     type: 'hash',
   },

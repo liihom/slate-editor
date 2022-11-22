@@ -1,7 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
 import { usePlugin, usePluginHelper } from '@cslate/core';
-import Tooltip from '../Tooltip';
 
 export type ToolbarButtonProps = {
   active?: boolean;
@@ -18,7 +17,6 @@ const ToolbarButton: React.FC<ToolbarButtonProps> = ({
   active = false,
   onClick,
   className,
-  tooltip = '',
 }) => {
   const { disabled: globalDisabled } = usePlugin();
   const { getPrefixCls } = usePluginHelper();
@@ -39,7 +37,7 @@ const ToolbarButton: React.FC<ToolbarButtonProps> = ({
     </div>
   );
 
-  return tooltip ? <Tooltip tooltip={tooltip}>{Button}</Tooltip> : Button;
+  return Button;
 };
 
 export default ToolbarButton;

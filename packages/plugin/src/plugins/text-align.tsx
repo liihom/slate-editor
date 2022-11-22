@@ -1,15 +1,9 @@
-import React from 'react';
 import { Locales } from '@cslate/core';
 import type { DSlatePlugin } from '@cslate/core';
 
-import { useSlate } from 'slate-react';
-import { useMessage, getBlockProps, setBlockProps } from '@cslate/core';
-import { IconFont, Toolbar } from '@cslate/component';
 import type { Descendant } from 'slate';
 
-const DEFAULT_VALUE = 'left';
 const TYPE = 'text-align';
-const iconStyle = { opacity: 0.7, fontSize: '93%' };
 const renderStyle = (text: Descendant) => {
   if (text[TYPE]) {
     return { textAlign: text?.[TYPE] };
@@ -17,50 +11,50 @@ const renderStyle = (text: Descendant) => {
   return {};
 };
 
-const ToolbarButton = () => {
-  const editor = useSlate();
-  const getMessage = useMessage();
+// const ToolbarButton = () => {
+//   const editor = useSlate();
+//   const getMessage = useMessage();
 
-  const onChange = (align: string) => {
-    setBlockProps(editor, TYPE, align);
-  };
+//   const onChange = (align: string) => {
+//     setBlockProps(editor, TYPE, align);
+//   };
 
-  return (
-    <Toolbar.Select<string>
-      onChange={onChange}
-      direction="horizontal"
-      options={[
-        {
-          tooltip: getMessage('left', '左对齐'),
-          label: <IconFont type="icon-alignleft" style={iconStyle} />,
-          value: 'left',
-        },
-        {
-          tooltip: getMessage('center', '居中对齐'),
-          label: <IconFont type="icon-aligncenter" style={iconStyle} />,
-          value: 'center',
-        },
-        {
-          tooltip: getMessage('right', '右对齐'),
-          label: <IconFont type="icon-alignright" style={iconStyle} />,
-          value: 'right',
-        },
-        {
-          tooltip: getMessage('justify', '两端对齐'),
-          label: <IconFont type="icon-alignjustify" style={iconStyle} />,
-          value: 'justify',
-        },
-      ]}
-      tooltip={getMessage('tooltip', '对齐方式')}
-      value={getBlockProps(editor, TYPE, DEFAULT_VALUE)}
-    />
-  );
-};
+//   return (
+//     <Toolbar.Select<string>
+//       onChange={onChange}
+//       direction="horizontal"
+//       options={[
+//         {
+//           tooltip: getMessage('left', '左对齐'),
+//           label: <>左对齐</>,
+//           value: 'left',
+//         },
+//         {
+//           tooltip: getMessage('center', '居中对齐'),
+//           label: <>居中对齐</>,
+//           value: 'center',
+//         },
+//         {
+//           tooltip: getMessage('right', '右对齐'),
+//           label: <>右对齐</>,
+//           value: 'right',
+//         },
+//         {
+//           tooltip: getMessage('justify', '两端对齐'),
+//           label: <>两端对齐</>,
+//           value: 'justify',
+//         },
+//       ]}
+//       tooltip={getMessage('tooltip', '对齐方式')}
+//       value={getBlockProps(editor, TYPE, DEFAULT_VALUE)}
+//     />
+//   );
+// };
 
 const TextAlignPlugin: DSlatePlugin = {
   type: TYPE,
   nodeType: 'element',
-  toolbar: <ToolbarButton />,
+  // toolbar: <ToolbarButton />,
   renderStyle,
   locale: [
     {

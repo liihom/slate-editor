@@ -16,8 +16,7 @@
       "@cslate/core": ["./packages/core/src/index.tsx"],
       "@cslate/plugin": ["./packages/plugin/src/index.tsx"],
       "@cslate/component": ["./packages/component/src/index.tsx"],
-      "@cslate/cslate": ["./packages/dslate/src/index.tsx"],
-      "@cslate/semi": ["./packages/semi/src/index.tsx"],
+      "@cslate/cslate": ["packages/cslate/src/index.tsx"],
       "@cslate": ["./packages"],
     }
   },

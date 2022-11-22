@@ -2,7 +2,7 @@ import React from 'react';
 import { useSlate } from 'slate-react';
 import { Locales } from '@cslate/core';
 
-import { IconFont, Toolbar } from '@cslate/component';
+import { Toolbar } from '@cslate/component';
 import type { DSlatePlugin } from '@cslate/core';
 import { getTextProps, toggleTextProps, useMessage } from '@cslate/core';
 
@@ -21,7 +21,7 @@ const ToolbarButton = () => {
       active={getTextProps(editor, TYPE)}
       tooltip={getMessage('tooltip', '加粗')}
     >
-      <IconFont type="icon-bold" />
+      {/* <IconFont type="icon-bold" /> */}
     </Toolbar.Button>
   );
 };

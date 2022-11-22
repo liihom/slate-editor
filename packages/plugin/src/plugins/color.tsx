@@ -1,16 +1,7 @@
-import React from 'react';
-
-import { TwitterPicker } from 'react-color';
-import { Locales } from '@cslate/core';
-
 import type { DSlatePlugin } from '@cslate/core';
 
-import { useSlate } from 'slate-react';
-import { IconFont, Toolbar } from '@cslate/component';
-import { useMessage, usePlugin, getTextProps, setTextProps } from '@cslate/core';
 import type { Descendant } from 'slate';
 
-const DEFAULT_COLOR = undefined;
 const TYPE = 'color';
 
 const renderStyle = (text: Descendant) => {
@@ -20,58 +11,10 @@ const renderStyle = (text: Descendant) => {
   return {};
 };
 
-const ToolbarButton = () => {
-  const editor = useSlate();
-  const getMessage = useMessage();
-  const { props } = usePlugin();
-
-  const handleChangeComplete = (value: any) => {
-    setTextProps(editor, TYPE, value?.hex ?? DEFAULT_COLOR);
-  };
-
-  return (
-    <Toolbar.Modal
-      tooltip={getMessage('tooltip', '字体颜色')}
-      overlay={
-        <TwitterPicker
-          color={getTextProps(editor, TYPE, DEFAULT_COLOR)}
-          onChangeComplete={handleChangeComplete}
-          colors={props?.colors}
-          triangle="hide"
-        />
-      }
-    >
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
-      >
-        <IconFont
-          style={{
-            fontSize: '80%',
-          }}
-          type="icon-zitiyanse"
-        />
-        <div
-          style={{
-            width: 14,
-            height: 2,
-            marginTop: 2,
-            backgroundColor: getTextProps(editor, TYPE, 'rgba(0,0,0,0.85)'),
-          }}
-        />
-      </div>
-    </Toolbar.Modal>
-  );
-};
-
 const ColorPlugin: DSlatePlugin = {
   type: 'color',
   nodeType: 'text',
-  toolbar: <ToolbarButton />,
+  // toolbar: <ToolbarButton />,
   renderStyle,
   props: {
     colors: [
@@ -87,10 +30,6 @@ const ColorPlugin: DSlatePlugin = {
       '#9900EF',
     ],
   },
-  locale: [
-    { locale: Locales.zhCN, tooltip: '字体颜色' },
-    { locale: Locales.enUS, tooltip: 'font colore' },
-  ],
 };
 
 export { ColorPlugin };

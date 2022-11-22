@@ -2,7 +2,7 @@ import React from 'react';
 import { Editor, Node, Path, Point, Range, Text, Transforms } from 'slate';
 import { Locales } from '@cslate/core';
 import { useSlate } from 'slate-react';
-import { IconFont, Toolbar } from '@cslate/component';
+import { Toolbar } from '@cslate/component';
 import { isBlockActive, useMessage } from '@cslate/core';
 import type { NodeEntry } from 'slate';
 import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@cslate/core';
@@ -50,7 +50,7 @@ const ToolbarButton = () => {
       active={isBlockActive(editor, TYPE)}
       onClick={toggle}
     >
-      <IconFont type="icon-link1" />
+      {/* <IconFont type="icon-link1" /> */}
     </Toolbar.Button>
   );
 };

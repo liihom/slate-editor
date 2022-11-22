@@ -6,14 +6,8 @@ import { usePluginHelper, ConfigContext } from '@cslate/core';
 import ToolbarItem from './ToolbarItem';
 
 import ToolbarButton from './ToolbarButton';
-import ToolbarSelect from './ToolbarSelect';
-import ToolbarModal from './ToolbarModal';
 
 import type { ToolbarButtonProps } from './ToolbarButton';
-import type { ToolbarSelectProps } from './ToolbarSelect';
-import type { ToolbarModalProps } from './ToolbarModal';
-
-import Divider from '../Divider';
 
 export interface ToolbarProps {
   toolbar?: string[];
@@ -26,7 +20,6 @@ const Toolbar = ({ toolbar }: ToolbarProps) => {
 
   const ToolbarItems = useMemo(() => {
     return toolbar?.map((type, index) => {
-      if (type === 'divider') return <Divider key={`${type}-${index}`} />;
       const plugin = plugins.find((i: DSlatePlugin) => i.type === type);
       if (plugin && plugin.toolbar) {
         return (
@@ -43,12 +36,10 @@ const Toolbar = ({ toolbar }: ToolbarProps) => {
   return <div className={prefixCls}>{ToolbarItems}</div>;
 };
 
-export { ToolbarButton, ToolbarSelect, ToolbarModal };
+export { ToolbarButton };
 
-export type { ToolbarButtonProps, ToolbarSelectProps, ToolbarModalProps };
+export type { ToolbarButtonProps };
 
 Toolbar.Button = ToolbarButton;
-Toolbar.Modal = ToolbarModal;
-Toolbar.Select = ToolbarSelect;
 
 export default Toolbar;

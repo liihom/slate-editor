@@ -3,7 +3,6 @@ import { useSlate } from 'slate-react';
 import { withHistory } from 'slate-history';
 import { Locales } from '@cslate/core';
 
-import { IconFont } from '@cslate/component';
 import type { DSlatePlugin } from '@cslate/core';
 import { useMessage } from '@cslate/core';
 import { Toolbar } from '@cslate/component';
@@ -27,14 +26,14 @@ const ToolbarButton = () => {
         tooltip={getMessage('undo.tooltip', '撤消')}
         disabled={editor.history.undos.length === 0}
       >
-        <IconFont type="icon-undo1" />
+        {/* <IconFont type="icon-undo1" /> */}
       </Toolbar.Button>
       <Toolbar.Button
         onClick={redo}
         tooltip={getMessage('redo.tooltip', '重做')}
         disabled={editor.history.redos.length === 0}
       >
-        <IconFont type="icon-redo1" />
+        {/* <IconFont type="icon-redo1" /> */}
       </Toolbar.Button>
     </>
   );

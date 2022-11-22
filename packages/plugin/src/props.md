@@ -24,10 +24,6 @@ $ npm i @dslate/plugin --save
 
 段落与标题插件
 
-### history
-
-撤销/重做插件
-
 ### clear
 
 清除文本样式插件
@@ -88,20 +84,6 @@ $ npm i @dslate/plugin --save
 
 对齐方式插件
 
-### list
-
-列表插件插件
-
-#### props
-
-| 参数       | 类型       | 默认值                                      | 说明               |
-| ---------- | ---------- | ------------------------------------------- | ------------------ |
-| listStyles | `string[]` | `['decimal', 'lower-alpha', 'lower-roman']` | 有序列表的前缀样式 |
-
-### todo-list
-
-任务列表插件
-
 ### img
 
 图片插件
@@ -122,14 +104,3 @@ $ npm i @dslate/plugin --save
 ### blockquote
 
 引用插件
-
-### hr
-
-分隔符插件
-
-#### props
-
-| 参数       | 类型     | 默认值                | 说明         |
-| ---------- | -------- | --------------------- | ------------ |
-| color      | `string` | `rgba(0, 0, 0, 0.06)` | 颜色         |
-| hoverColor | `string` | `#1890ff`             | 选中时的颜色 |

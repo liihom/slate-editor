@@ -5,14 +5,10 @@
  * 回帖编辑器实现
  */
 import React, { useRef } from 'react';
-// import DSlate from '@cslate/cslate';
 import type { Editor } from 'slate';
-// import { ConfigProvider, defaultConfig } from '@cslate/core';
 
-// import type { UploadRequestOption } from 'rc-upload/lib/interface';
-
-// import { ClubEditor } from '@cslate/core';
-import { ClubEditor } from '@cslate/cslate';
+// import { ClubEditor } from '@cslate/cslate';
+import ClubEditor from '@cslate/cslate';
 
 import './demo.less';
 
@@ -41,6 +37,7 @@ export default () => {
         </div>
         <ClubEditor
           ref={ref}
+          value={[{ text: '' }]}
           content={'啊哈哈哈'}
           // toolbar={['emotion']}
           placeholder={PLACEHOLDER_TEXT}

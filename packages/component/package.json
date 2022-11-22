@@ -36,11 +36,9 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
     "@babel/runtime": "^7.16.3",
-    "@dslate/core": "1.0.9",
+    "@cslate/core": "1.0.2",
     "classnames": "^2.3.1",
-    "rc-tooltip": "^5.1.1",
     "slate": "^0.81.0",
     "slate-react": "^0.81.0"
   },

@@ -2,7 +2,7 @@ import React from 'react';
 import { Editor, Text, Transforms } from 'slate';
 import { Locales } from '@cslate/core';
 import { useSlate } from 'slate-react';
-import { IconFont, Toolbar } from '@cslate/component';
+import { Toolbar } from '@cslate/component';
 import type { DSlatePlugin } from '@cslate/core';
 import { useMessage } from '@cslate/core';
 
@@ -41,7 +41,7 @@ const ToolbarButton = () => {
       }}
       tooltip={getMessage('tooltip', '清理格式')}
     >
-      <IconFont type="icon-empty" />
+      {/* <IconFont type="icon-empty" /> */}
     </Toolbar.Button>
   );
 };

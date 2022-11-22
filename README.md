@@ -14,27 +14,11 @@ DSlate 是一个基于 [Slate](https://github.com/ianstormtaylor/slate) 构建�
 - [插件开发](https://rojer95.github.io/dslate/#/docs/plugin)
 - [国际化](https://rojer95.github.io/dslate/#/docs/locale)
 - [自定义文件上传](https://rojer95.github.io/dslate/#/docs/upload)
-- [Semi 风格](https://rojer95.github.io/dslate/#/docs/semi)
 
 ## 开箱即用
 
 | 组件 | 说明 |
 | --- | --- |
 | [@dslate/dslate](https://www.npmjs.com/package/@dslate/dslate) | 整合了 Antd 风格开箱即用的编辑器组件 |
-| [@dslate/semi](https://www.npmjs.com/package/@dslate/semi) | 整合了 Semi 风格开箱即用的编辑器组件 |
 
 ## 组件
-
-DSlate 提供了如下组件：
-
-| 组件 | 说明 |
-| --- | --- |
-| [ConfigProvider](https://rojer95.github.io/dslate/#/components/config) | 全局配置组件 |
-| [Toolbar.Button](https://rojer95.github.io/dslate/#/components/toolbar/toolbar-button) | 工具栏-按钮组件 |
-| [Toolbar.Select](https://rojer95.github.io/dslate/#/components/toolbar/toolbar-select) | 工具栏-选择框组件 |
-| [Toolbar.Modal](https://rojer95.github.io/dslate/#/components/toolbar/toolbar-modal) | 工具栏-模态框组件 |
-| [Popover](https://rojer95.github.io/dslate/#/components/popover) | 弹出层组件 |
-
-## LICENSE
-
-MIT

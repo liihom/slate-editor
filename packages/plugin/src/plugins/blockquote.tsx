@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { isBlockActive, isEmpty, isStart, useMessage } from '@cslate/core';
-import { IconFont, Toolbar } from '@cslate/component';
+import { Toolbar } from '@cslate/component';
 import { Editor, Transforms, Element, Path, Range } from 'slate';
 import { useSlate } from 'slate-react';
 
@@ -56,7 +56,7 @@ const ToolbarButton = () => {
       active={isBlockActive(editor, TYPE)}
       onClick={toggle}
     >
-      <IconFont type="icon-blockquote" />
+      {/* <IconFont type="icon-blockquote" /> */}
     </Toolbar.Button>
   );
 };

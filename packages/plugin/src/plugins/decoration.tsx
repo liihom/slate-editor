@@ -4,7 +4,7 @@ import { Locales } from '@cslate/core';
 
 import type { Descendant } from 'slate';
 
-import { IconFont, Toolbar } from '@cslate/component';
+import { Toolbar } from '@cslate/component';
 
 import { getTextProps, toggleTextProps, useMessage } from '@cslate/core';
 
@@ -24,7 +24,7 @@ const ToolbarButton = () => {
         }}
         tooltip={getMessage('underline.tooltip', '下划线')}
       >
-        <IconFont style={{ fontSize: '90%' }} type="icon-xiahuaxian" />
+        {/* <IconFont style={{ fontSize: '90%' }} type="icon-xiahuaxian" /> */}
       </Toolbar.Button>
       <Toolbar.Button
         active={getTextProps(editor, 'through')}
@@ -33,7 +33,7 @@ const ToolbarButton = () => {
         }}
         tooltip={getMessage('through.tooltip', '删除线')}
       >
-        <IconFont type="icon-strikethrough" />
+        {/* <IconFont type="icon-strikethrough" /> */}
       </Toolbar.Button>
     </>
   );
