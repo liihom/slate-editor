@@ -1,6 +1,6 @@
 {
   "name": "@auto/cslate",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "一个Ant Design风格的富文本编辑器 - An Ant Design style rich editor based on Slate",
   "keywords": [
     "antd",
@@ -36,9 +36,9 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@auto/cslate-component": "^1.0.1",
-    "@auto/cslate-core": "^1.0.1",
-    "@auto/cslate-plugin": "^1.0.1",
+    "@auto/cslate-component": "^1.0.0",
+    "@auto/cslate-core": "^1.0.0",
+    "@auto/cslate-plugin": "^1.0.0",
     "@babel/runtime": "^7.16.3",
     "classnames": "^2.3.1",
     "slate": "^0.81.0",
