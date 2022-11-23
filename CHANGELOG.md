@@ -10,4 +10,8 @@ All notable changes to this project will be documented in this file. See [Conven
 
 **Note:** Version bump only for package dslate-master
 
+## [1.0.1](https://github.com/liihom/slate-editor/compare/v1.0.15...v1.0.1) (2022-11-23)
+
+**Note:** Version bump only for package dslate-master
+
 # Change Log
