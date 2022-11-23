@@ -57,5 +57,6 @@
   ],
   "devDependencies": {
     "@types/react-color": "^3.0.6"
-  }
+  },
+  "gitHead": "cf6162a57b90a71ca5e54840862bbcc287f256a8"
 }
