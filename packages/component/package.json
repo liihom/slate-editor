@@ -1,6 +1,6 @@
 {
   "name": "@auto/cslate-component",
-  "version": "1.0.15",
+  "version": "1.0.1",
   "description": "CSlate组件 - Component of CSlate",
   "keywords": [
     "antd",
@@ -36,8 +36,8 @@
     "ie >= 11"
   ],
   "dependencies": {
+    "@auto/cslate-core": "1.0.1",
     "@babel/runtime": "^7.16.3",
-    "@auto/cslate-core": "1.0.15",
     "classnames": "^2.3.1",
     "slate": "^0.81.0",
     "slate-react": "^0.81.0"
