@@ -17,7 +17,7 @@
       "@auto/cslate-plugin": ["./packages/plugin/src/index.tsx"],
       "@auto/cslate-component": ["./packages/component/src/index.tsx"],
       "@auto/cslate": ["./packages/cslate/src/index.tsx"],
-      "@cslate": ["./packages"]
+      "@auto": ["./packages"]
     }
   },
   "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
