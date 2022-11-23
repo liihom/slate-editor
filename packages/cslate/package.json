@@ -36,9 +36,9 @@
     "ie >= 11"
   ],
   "dependencies": {
-    "@auto/cslate-component": "1.0.1",
-    "@auto/cslate-core": "1.0.1",
-    "@auto/cslate-plugin": "1.0.1",
+    "@auto/cslate-component": "^1.0.1",
+    "@auto/cslate-core": "^1.0.1",
+    "@auto/cslate-plugin": "^1.0.1",
     "@babel/runtime": "^7.16.3",
     "classnames": "^2.3.1",
     "slate": "^0.81.0",
