@@ -8,9 +8,9 @@ import {
   mergeStyle,
   useConfig,
   useMessage,
-} from '@cslate/core';
+} from '@auto/cslate-core';
 
-import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
+import type { DSlatePlugin, RenderElementPropsWithStyle } from '@auto/cslate-core';
 
 interface EditableProps {
   disabled?: boolean;

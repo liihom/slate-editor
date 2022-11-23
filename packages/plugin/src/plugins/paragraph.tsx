@@ -1,10 +1,10 @@
 import React from 'react';
 import type { NodeEntry, Descendant, Editor } from 'slate';
-import { Locales } from '@cslate/core';
+import { Locales } from '@auto/cslate-core';
 
 import { Transforms, Node, Text } from 'slate';
-import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@cslate/core';
-import { parseStyles } from '@cslate/core';
+import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@auto/cslate-core';
+import { parseStyles } from '@auto/cslate-core';
 
 const TYPE = 'paragraph';
 // const DEFAULT_TYPE = 'paragraph';

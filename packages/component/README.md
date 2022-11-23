@@ -7,11 +7,11 @@ See our website [cslate](http://liihom.github.io/cslate) for more information.
 Using npm:
 
 ```bash
-$ npm install --save  @cslate/component
+$ npm install --save  @auto/cslate-component
 ```
 
 or using yarn:
 
 ```bash
-$ yarn add  @cslate/component
+$ yarn add  @auto/cslate-component
 ```

@@ -4,8 +4,8 @@
 import React, { useState } from 'react';
 import type { Descendant } from 'slate';
 
-import DSlate from '@cslate/cslate';
-import { ConfigProvider, defaultConfig } from '@cslate/core';
+import DSlate from '@auto/cslate';
+import { ConfigProvider, defaultConfig } from '@auto/cslate-core';
 
 export default () => {
   const [value, setValue] = useState<Descendant[]>([

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Locales } from '@cslate/core';
+import { Locales } from '@auto/cslate-core';
 import isHotkey from 'is-hotkey';
-import type { DSlatePlugin } from '@cslate/core';
+import type { DSlatePlugin } from '@auto/cslate-core';
 
 import { useSlate } from 'slate-react';
-import { Toolbar } from '@cslate/component';
-import { useMessage, getBlockProps, setBlockProps, clearBlockProps } from '@cslate/core';
+import { Toolbar } from '@auto/cslate-component';
+import { useMessage, getBlockProps, setBlockProps, clearBlockProps } from '@auto/cslate-core';
 import { Editor, Range } from 'slate';
 import type { Descendant } from 'slate';
 

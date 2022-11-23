@@ -2,8 +2,8 @@
 import classNames from 'classnames';
 import React, { useEffect, useRef, useState } from 'react';
 import { ReactEditor, useSelected, useSlate } from 'slate-react';
-import { usePlugin } from '@cslate/core';
-import type { RenderElementPropsWithStyle } from '@cslate/core';
+import { usePlugin } from '@auto/cslate-core';
+import type { RenderElementPropsWithStyle } from '@auto/cslate-core';
 import { Transforms } from 'slate';
 
 const prefixCls = 'cslate-img-element';

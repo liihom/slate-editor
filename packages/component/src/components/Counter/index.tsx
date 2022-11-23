@@ -1,8 +1,8 @@
 import React from 'react';
 import { Node } from 'slate';
 import { useSlate } from 'slate-react';
-import { usePluginHelper } from '@cslate/core';
-import type { ShowCountProps } from '@cslate/core';
+import { usePluginHelper } from '@auto/cslate-core';
+import type { ShowCountProps } from '@auto/cslate-core';
 
 export default ({ showCount = false }: { showCount?: boolean | ShowCountProps }) => {
   const { getPrefixCls } = usePluginHelper();

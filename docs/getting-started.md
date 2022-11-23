@@ -19,7 +19,7 @@ CSlate 是一个基于[Slate](https://github.com/ianstormtaylor/slate) 构建的
 ## 安装
 
 ```shell
-$ npm i @cslate/cslate --save # Ant 风格
+$ npm i @auto/cslate --save # Ant 风格
 ```
 
 ## 在项目中使用

@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
-import type { DSlateRef } from '@cslate/core';
-import { ConfigProvider, ConfigConsumer } from '@cslate/core';
+import type { DSlateRef } from '@auto/cslate-core';
+import { ConfigProvider, ConfigConsumer } from '@auto/cslate-core';
 
-import DefaultPlugin from '@cslate/plugin';
-import { mergeLocalteFromPlugins } from '@cslate/core';
+import DefaultPlugin from '@auto/cslate-plugin';
+import { mergeLocalteFromPlugins } from '@auto/cslate-core';
 
 import DSlate from './components/DSlate';
 import type { AntdStyleDSlateProps } from './typing';

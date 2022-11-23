@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 import type { Descendant } from 'slate';
-import { Locales } from '@cslate/core';
-import type { DSlatePlugin } from '@cslate/core';
+import { Locales } from '@auto/cslate-core';
+import type { DSlatePlugin } from '@auto/cslate-core';
 
 const TYPE = 'line-height';
 

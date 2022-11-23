@@ -1,5 +1,5 @@
 {
-  "name": "@cslate/plugin",
+  "name": "@auto/cslate-plugin",
   "version": "1.0.15",
   "description": "DSlate预设插件 - Preset plugin of DSlate",
   "keywords": [
@@ -36,8 +36,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.16.3",
-    "@cslate/component": "1.0.15",
-    "@cslate/core": "1.0.15",
+    "@auto/cslate-component": "1.0.15",
+    "@auto/cslate-core": "1.0.15",
     "classnames": "^2.3.1",
     "escape-html": "^1.0.3",
     "is-hotkey": "^0.2.0",

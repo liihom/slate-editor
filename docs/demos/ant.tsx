@@ -5,9 +5,9 @@
 import React, { useRef } from 'react';
 import type { Editor } from 'slate';
 
-import { ClubEditor } from '@cslate/cslate';
+import { ClubEditor } from '@auto/cslate';
 
-import '@cslate/cslate/es/components/DSlate/index.css';
+import '@auto/cslate/es/components/DSlate/index.css';
 import './demo.less';
 
 export default () => {

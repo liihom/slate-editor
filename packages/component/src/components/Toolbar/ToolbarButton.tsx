@@ -1,6 +1,6 @@
 import classnames from 'classnames';
 import React from 'react';
-import { usePlugin, usePluginHelper } from '@cslate/core';
+import { usePlugin, usePluginHelper } from '@auto/cslate-core';
 
 export type ToolbarButtonProps = {
   active?: boolean;

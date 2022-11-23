@@ -1,5 +1,5 @@
 {
-  "name": "@cslate/cslate",
+  "name": "@auto/cslate",
   "version": "1.0.15",
   "description": "一个Ant Design风格的富文本编辑器 - An Ant Design style rich editor based on Slate",
   "keywords": [
@@ -14,11 +14,11 @@
   "sideEffects": [
     "*.less"
   ],
-  "homepage": "https://github.com/rojer95/dslate/tree/master/packages/dslate#readme",
-  "bugs": "https://github.com/rojer95/dslate/issues",
+  "homepage": "https://github.com/liihom/slate-editor#readme",
+  "bugs": "https://github.com/liihom/slate-editor/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rojer95/dslate"
+    "url": "https://github.com/liihom/slate-editor"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -37,9 +37,9 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.16.3",
-    "@cslate/component": "1.0.15",
-    "@cslate/core": "1.0.15",
-    "@cslate/plugin": "1.0.15",
+    "@auto/cslate-component": "1.0.15",
+    "@auto/cslate-core": "1.0.15",
+    "@auto/cslate-plugin": "1.0.15",
     "classnames": "^2.3.1",
     "slate": "^0.81.0",
     "slate-react": "^0.81.0"

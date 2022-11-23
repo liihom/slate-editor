@@ -13,10 +13,10 @@
     "declaration": true,
     "skipLibCheck": true,
     "paths": {
-      "@cslate/core": ["./packages/core/src/index.tsx"],
-      "@cslate/plugin": ["./packages/plugin/src/index.tsx"],
-      "@cslate/component": ["./packages/component/src/index.tsx"],
-      "@cslate/cslate": ["./packages/cslate/src/index.tsx"],
+      "@auto/cslate-core": ["./packages/core/src/index.tsx"],
+      "@auto/cslate-plugin": ["./packages/plugin/src/index.tsx"],
+      "@auto/cslate-component": ["./packages/component/src/index.tsx"],
+      "@auto/cslate": ["./packages/cslate/src/index.tsx"],
       "@cslate": ["./packages"]
     }
   },

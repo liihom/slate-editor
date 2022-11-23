@@ -5,11 +5,11 @@ import React, { useState } from 'react';
 import type { Descendant } from 'slate';
 import { Range, Transforms } from 'slate';
 
-import DSlate, { DefaultToolbar, DefaultPlugin } from '@cslate/cslate';
-import type { DSlatePlugin } from '@cslate/core';
-import { usePlugin } from '@cslate/core';
-import { ConfigProvider, defaultConfig } from '@cslate/core';
-import { Toolbar } from '@cslate/component';
+import DSlate, { DefaultToolbar, DefaultPlugin } from '@auto/cslate';
+import type { DSlatePlugin } from '@auto/cslate-core';
+import { usePlugin } from '@auto/cslate-core';
+import { ConfigProvider, defaultConfig } from '@auto/cslate-core';
+import { Toolbar } from '@auto/cslate-component';
 import { useSlate } from 'slate-react';
 
 /**

@@ -1,7 +1,7 @@
 {
   "private": false,
   "license": "MIT",
-  "homepage": "http://rojer95.github.io/dslate",
+  "homepage": "https://github.com/liihom/slate-editor",
   "workspaces": [
     "packages/*"
   ],
@@ -16,7 +16,7 @@
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
     "lernaVersion": "lerna version patch --exact --force-publish --conventional-commits",
-    "lernaPublish": "lerna publish from-git"
+    "lernaPublish": "lerna publish"
   },
   "gitHooks": {
     "pre-commit": "pretty-quick --staged",

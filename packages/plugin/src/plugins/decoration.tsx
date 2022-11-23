@@ -1,14 +1,14 @@
 import React from 'react';
 import { useSlate } from 'slate-react';
-import { Locales } from '@cslate/core';
+import { Locales } from '@auto/cslate-core';
 
 import type { Descendant } from 'slate';
 
-import { Toolbar } from '@cslate/component';
+import { Toolbar } from '@auto/cslate-component';
 
-import { getTextProps, toggleTextProps, useMessage } from '@cslate/core';
+import { getTextProps, toggleTextProps, useMessage } from '@auto/cslate-core';
 
-import type { DSlatePlugin } from '@cslate/core';
+import type { DSlatePlugin } from '@auto/cslate-core';
 const TYPE = 'decoration';
 
 const ToolbarButton = () => {

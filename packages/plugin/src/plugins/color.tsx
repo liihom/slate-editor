@@ -1,4 +1,4 @@
-import type { DSlatePlugin } from '@cslate/core';
+import type { DSlatePlugin } from '@auto/cslate-core';
 
 import type { Descendant } from 'slate';
 

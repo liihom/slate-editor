@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import React, { useEffect, useRef, useState } from 'react';
 import { ReactEditor, useSelected, useSlate } from 'slate-react';
 // import type { Rnd } from 'react-rnd';
-// import { usePluginHelper, useConfig, usePlugin } from '@cslate/core';
-import { usePlugin } from '@cslate/core';
-import type { RenderElementPropsWithStyle } from '@cslate/core';
+// import { usePluginHelper, useConfig, usePlugin } from '@auto/cslate-core';
+import { usePlugin } from '@auto/cslate-core';
+import type { RenderElementPropsWithStyle } from '@auto/cslate-core';
 import { Transforms } from 'slate';
 
 type Draggable = {

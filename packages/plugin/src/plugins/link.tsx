@@ -1,11 +1,11 @@
 import React from 'react';
 import { Editor, Node, Path, Point, Range, Text, Transforms } from 'slate';
-import { Locales } from '@cslate/core';
+import { Locales } from '@auto/cslate-core';
 import { useSlate } from 'slate-react';
-import { Toolbar } from '@cslate/component';
-import { isBlockActive, useMessage } from '@cslate/core';
+import { Toolbar } from '@auto/cslate-component';
+import { isBlockActive, useMessage } from '@auto/cslate-core';
 import type { NodeEntry } from 'slate';
-import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@cslate/core';
+import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@auto/cslate-core';
 
 const TYPE = 'link';
 

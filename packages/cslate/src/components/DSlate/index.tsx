@@ -4,9 +4,9 @@ import { ConfigProvider as AntdConfigProvider } from 'antd';
 // import { useFocused } from 'slate-react';
 import SizeContext from 'antd/lib/config-provider/SizeContext';
 
-import type { DSlateRef } from '@cslate/core';
-import DSlate, { usePluginHelper } from '@cslate/core';
-import { Toolbar, Progress, Editable, Counter } from '@cslate/component';
+import type { DSlateRef } from '@auto/cslate-core';
+import DSlate, { usePluginHelper } from '@auto/cslate-core';
+import { Toolbar, Progress, Editable, Counter } from '@auto/cslate-component';
 
 import type { AntdStyleDSlateProps } from '../../typing';
 

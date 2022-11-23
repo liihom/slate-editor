@@ -20,8 +20,8 @@ ConfigProvider 提供了全局定制化编辑器的功能，通过他可以向�
 import React, { useState } from 'react';
 import type { Descendant } from 'slate';
 
-import DSlate from '@cslate/cslate';
-import { ConfigProvider, defaultConfig } from '@cslate/core';
+import DSlate from '@auto/cslate';
+import { ConfigProvider, defaultConfig } from '@auto/cslate-core';
 
 export default () => {
   const [value, setValue] = useState<Descendant[]>([

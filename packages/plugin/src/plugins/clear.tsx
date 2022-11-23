@@ -1,10 +1,10 @@
 import React from 'react';
 import { Editor, Text, Transforms } from 'slate';
-import { Locales } from '@cslate/core';
+import { Locales } from '@auto/cslate-core';
 import { useSlate } from 'slate-react';
-import { Toolbar } from '@cslate/component';
-import type { DSlatePlugin } from '@cslate/core';
-import { useMessage } from '@cslate/core';
+import { Toolbar } from '@auto/cslate-component';
+import type { DSlatePlugin } from '@auto/cslate-core';
+import { useMessage } from '@auto/cslate-core';
 
 const clearStyle = (editor: Editor) => {
   if (!editor.selection) return;
