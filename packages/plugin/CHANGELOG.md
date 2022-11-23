@@ -6,4 +6,8 @@ All notable changes to this project will be documented in this file. See [Conven
 
 **Note:** Version bump only for package @auto/cslate-plugin
 
+## [1.0.1](https://github.com/rojer95/dslate/compare/v1.0.15...v1.0.1) (2022-11-23)
+
+**Note:** Version bump only for package @auto/cslate-plugin
+
 # Change Log
