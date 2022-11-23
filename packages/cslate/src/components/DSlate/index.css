@@ -1,0 +1,96 @@
+.ant-cslate {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  padding: none !important;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  list-style: none;
+  background-color: #fff;
+  background-image: none;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.ant-cslate-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.ant-cslate-toolbar-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 18px;
+}
+
+.ant-cslate-toolbar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  color: #111e36;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ant-cslate-toolbar-button:hover {
+  background-color: #1890ff;
+}
+
+.ant-cslate-toolbar-button.active {
+  color: #f60;
+}
+
+.ant-cslate-toolbar-button.disabled {
+  color: #c5cad4 !important;
+  cursor: not-allowed !important;
+}
+
+.ant-cslate-toolbar-button.disabled:hover {
+  background-color: transparent !important;
+}
+
+.ant-cslate-counter {
+  color: #666d7f;
+  font-size: 12px;
+  white-space: nowrap;
+  text-align: right;
+  pointer-events: none;
+}
+
+.ant-cslate-img {
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+.ant-cslate-img:hover {
+  border-color: #1890ff;
+}
+.ant-cslate-img.selected {
+  border-color: transparent;
+}
+
+.ant-cslate-progress-bg {
+  background-color: #1890ff;
+}
+
+.ant-cslate-editable {
+  box-sizing: border-box;
+  min-height: 150px !important;
+  max-height: 300px !important;
+  padding: 8px 14px;
+  overflow-y: scroll;
+  font-size: 14px;
+  border: 1px solid #e6ebf5;
+  border-radius: 4px;
+}

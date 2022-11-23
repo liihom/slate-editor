@@ -10,7 +10,7 @@ import { Toolbar, Progress, Editable, Counter } from '@cslate/component';
 
 import type { AntdStyleDSlateProps } from '../../typing';
 
-import './index.less';
+import './index.css';
 
 const AntdStyleEditor = ({
   bordered = true,

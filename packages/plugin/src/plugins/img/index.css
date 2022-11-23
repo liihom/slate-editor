@@ -1,0 +1,34 @@
+.cslate-img-element {
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.cslate-img-element:hover {
+  border-color: #1890ff;
+}
+
+.cslate-img-element.selected {
+  border-color: transparent;
+}
+
+.editor_menu_item {
+  position: relative;
+  cursor: pointer;
+}
+.editor_menu_item svg {
+  display: block;
+  transition: all 0.2s;
+}
+.editor_menu_item svg:hover {
+  fill: #ff6600;
+}
+
+.editor_menu_item.disabled svg {
+  cursor: not-allowed;
+  fill: #ccc;
+}
+
+.editor_menu_item.disabled svg:hover {
+  fill: #ccc;
+}

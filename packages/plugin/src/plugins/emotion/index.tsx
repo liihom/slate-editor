@@ -19,7 +19,7 @@ import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
 import { Locales } from '@cslate/core';
 
 import { emotions } from './data';
-import './index.less';
+import './index.css';
 
 const TYPE = 'emotion';
 
