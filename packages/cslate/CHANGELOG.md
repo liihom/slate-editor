@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.12](https://github.com/rojer95/dslate/compare/v1.0.11...v1.0.12) (2022-11-23)
+
+### Features
+
+- 升级 antd 到 5x, 解除 antd less 依赖 ([836cf8f](https://github.com/rojer95/dslate/commit/836cf8f6902b9849fa896b3ff16c753956fcbd64))
+
 ## [1.0.11](https://github.com/rojer95/dslate/compare/v1.0.10...v1.0.11) (2022-11-23)
 
 **Note:** Version bump only for package @cslate/cslate
