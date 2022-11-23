@@ -14,7 +14,7 @@ import type { UploadRequestOption } from 'rc-upload/lib/interface';
 import type { DSlatePlugin, RenderElementPropsWithStyle } from '@cslate/core';
 import { Locales } from '@cslate/core';
 
-import './index.css';
+// import './index.css';
 
 const TYPE = 'img';
 

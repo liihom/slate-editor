@@ -41,6 +41,7 @@ if (type === 'es') {
         'antd',
       ],
     ],
+    extractCSS: true,
   };
 }
 
