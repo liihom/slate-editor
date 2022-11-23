@@ -1,6 +1,6 @@
 {
   "name": "@cslate/plugin",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "DSlate预设插件 - Preset plugin of DSlate",
   "keywords": [
     "wysiwyg",
@@ -36,8 +36,8 @@
   ],
   "dependencies": {
     "@babel/runtime": "^7.16.3",
-    "@cslate/component": "1.0.13",
-    "@cslate/core": "1.0.13",
+    "@cslate/component": "1.0.14",
+    "@cslate/core": "1.0.14",
     "classnames": "^2.3.1",
     "escape-html": "^1.0.3",
     "is-hotkey": "^0.2.0",
