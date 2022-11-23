@@ -1,6 +1,6 @@
 {
   "name": "@cslate/core",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "富文本编辑器",
   "keywords": [
     "rich-editor",
