@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/liihom/slate-editor/compare/v1.0.5...v1.0.6) (2022-11-23)
+
+### Bug Fixes
+
+- 更改内部 utils 导出和引用 ([b63f346](https://github.com/liihom/slate-editor/commit/b63f34629cbb25795354327ec4846913c230212b))
+
 ## [1.0.5](https://github.com/liihom/slate-editor/compare/v1.0.4...v1.0.5) (2022-11-23)
 
 ### Features
