@@ -14,12 +14,20 @@ interface IProps {
   uploadImgServer: string;
 }
 
+/**
+ * 判断是否是 Server 端
+ * 根据 `window` 对象是否存在来判断
+ */
+export function isServer(): boolean {
+  return typeof window === 'undefined';
+}
+
 const ClubEditor = forwardRef(
   (
     { content, placeholder = '请输入内容', toolbar = ['img', 'emotion'], uploadImgServer }: IProps,
     ref,
   ) => {
-    const initValue = htmlToContent(content || '');
+    const initValue = !isServer() ? htmlToContent(content || '') : '';
     const [value, setValue] = useState<Descendant[]>(initValue as Descendant[]);
 
     const slateRef = useRef<DSlateRef>(null);
