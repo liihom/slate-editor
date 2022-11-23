@@ -1,13 +1,15 @@
 {
   "name": "@cslate/core",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "富文本编辑器",
   "keywords": [
     "rich-editor",
     "slate",
     "slate-react"
   ],
-  "sideEffects": ["*.less"],
+  "sideEffects": [
+    "*.less"
+  ],
   "homepage": "https://github.com/rojer95/dslate/tree/master/packages/core#readme",
   "bugs": "https://github.com/rojer95/dslate/issues",
   "repository": {
