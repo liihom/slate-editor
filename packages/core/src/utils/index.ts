@@ -8,4 +8,4 @@ export { promiseUploadFunc } from './promiseUploadFunc';
 export { base64file } from './base64file';
 export { mergeLocalteFromPlugins } from './mergeLocalteFromPlugins';
 export { isEmpty } from './isEmpty';
-export { htmlToContent } from './deserialize';
+export { parseStyles, htmlToContent } from './deserialize';

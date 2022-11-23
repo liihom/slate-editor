@@ -4,7 +4,7 @@ import { Locales } from '@cslate/core';
 
 import { Transforms, Node, Text } from 'slate';
 import type { DSlatePlugin, NormalizeNode, RenderElementPropsWithStyle } from '@cslate/core';
-import { parseStyles } from '@cslate/core/src/utils/deserialize';
+import { parseStyles } from '@cslate/core';
 
 const TYPE = 'paragraph';
 // const DEFAULT_TYPE = 'paragraph';
