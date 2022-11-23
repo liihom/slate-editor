@@ -5,7 +5,7 @@ import type { DSlateRef } from '@cslate/core';
 import { ConfigProvider, defaultConfig } from '@cslate/core';
 
 import type { UploadRequestOption } from 'rc-upload/lib/interface';
-import { htmlToContent } from '@cslate/core/src/utils/deserialize';
+import { htmlToContent } from '@cslate/core';
 
 interface IProps {
   content?: string;
