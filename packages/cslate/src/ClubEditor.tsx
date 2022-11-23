@@ -5,7 +5,7 @@ import type { DSlateRef } from '@cslate/core';
 import { ConfigProvider, defaultConfig } from '@cslate/core';
 
 import type { UploadRequestOption } from 'rc-upload/lib/interface';
-import { htmlToContent } from '@cslate/core';
+import { htmlToContent, emptyNodes } from '@cslate/core';
 
 interface IProps {
   content?: string;
@@ -27,7 +27,8 @@ const ClubEditor = forwardRef(
     { content, placeholder = '请输入内容', toolbar = ['img', 'emotion'], uploadImgServer }: IProps,
     ref,
   ) => {
-    const initValue = !isServer() ? htmlToContent(content || '') : '';
+    if (isServer()) return <></>;
+    const initValue = htmlToContent(content || '');
     const [value, setValue] = useState<Descendant[]>(initValue as Descendant[]);
 
     const slateRef = useRef<DSlateRef>(null);
