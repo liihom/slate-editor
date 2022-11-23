@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.5](https://github.com/liihom/slate-editor/compare/v1.0.4...v1.0.5) (2022-11-23)
+
+### Features
+
+- 将项目中 less 改为 css ([4b57102](https://github.com/liihom/slate-editor/commit/4b571023267c42bc9605fc307915ed831c3c10fc))
+
 ## [1.0.4](https://github.com/liihom/slate-editor/compare/v1.0.2...v1.0.4) (2022-11-23)
 
 ### Features
