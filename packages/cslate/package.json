@@ -45,7 +45,7 @@
     "slate-react": "^0.81.0"
   },
   "peerDependencies": {
-    "antd": "4.x",
+    "antd": "5.x",
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },

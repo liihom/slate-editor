@@ -7,6 +7,7 @@ import type { Editor } from 'slate';
 
 import { ClubEditor } from '@cslate/cslate';
 
+import '@cslate/cslate/es/components/DSlate/index.css';
 import './demo.less';
 
 export default () => {
