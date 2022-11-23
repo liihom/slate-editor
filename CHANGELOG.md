@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/liihom/slate-editor/compare/v1.0.14...v1.0.15) (2022-11-23)
+
+### Performance Improvements
+
+- 兼容服务端初始化组件 ([c54c946](https://github.com/liihom/slate-editor/commit/c54c9460ad8c913ad5fa1b2f5d6bc2ddb672c226))
+
 ## [1.0.14](https://github.com/liihom/slate-editor/compare/v1.0.13...v1.0.14) (2022-11-23)
 
 ### Performance Improvements
