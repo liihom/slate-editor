@@ -28,21 +28,25 @@ const ClubEditor = forwardRef(
     ref,
   ) => {
     if (isServer()) return <></>;
-    const initValue = htmlToContent(content || '');
+
+    const initValue = !content ? emptyNodes : htmlToContent(content || '');
     const [value, setValue] = useState<Descendant[]>(initValue as Descendant[]);
 
     const slateRef = useRef<DSlateRef>(null);
 
+    // todo: 上传进度优化及提示优化
     const uploadRq = useCallback(
       (options: UploadRequestOption<any>) => {
         if (!uploadImgServer) {
           console.warn('请配置上传图片服务地址！');
           return;
         }
-        const { file, filename = '', onSuccess, onError } = options;
+        const { file, filename = '', onSuccess, onError, onProgress } = options;
         // 添加图片数据
         const formdata = new FormData();
         formdata.append(filename, file);
+
+        onProgress?.({ percent: 10 });
 
         // 定义 xhr
         const xhr = new XMLHttpRequest();
@@ -51,7 +55,8 @@ const ClubEditor = forwardRef(
         // 设置超时
         xhr.timeout = 50000;
         xhr.ontimeout = () => {
-          alert('上传图片超时');
+          console.warn('上传图片超时');
+          onProgress?.({ percent: 100 });
         };
 
         // 返回数据
@@ -63,19 +68,20 @@ const ClubEditor = forwardRef(
               try {
                 result = JSON.parse(result);
               } catch (ex) {
-                console.log('上传图片失败', '上传图片返回结果错误，返回结果是: ' + result);
+                console.warn('上传图片失败', '上传图片返回结果错误，返回结果是: ' + result);
                 return;
               }
+              onProgress?.({ percent: 100 });
             }
-            console.log('图片上传结果 result ==', result);
             if (result.returncode === 0) {
               const url = result.result?.[0];
-              console.log('url', url);
               onSuccess?.({
                 url,
               });
+              onProgress?.({ percent: 100 });
             } else {
               onError?.(result);
+              onProgress?.({ percent: 100 });
             }
           }
         };

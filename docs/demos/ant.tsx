@@ -27,9 +27,9 @@ export default () => {
         </div>
         <ClubEditor
           ref={ref}
-          content={'啊哈哈哈'}
+          content={''}
           // toolbar={['emotion']}
-          uploadImgServer="###"
+          uploadImgServer=""
         />
         <div className="btn_group">
           <div className="btn btn_blue_outline">取消修改</div>

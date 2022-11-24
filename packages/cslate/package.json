@@ -21,7 +21,8 @@
     "url": "https://github.com/liihom/slate-editor"
   },
   "license": "MIT",
-  "main": "lib/index.js",
+  "type": "module",
+  "main": "es/index.js",
   "module": "es/index.js",
   "types": "lib/index.d.ts",
   "files": [

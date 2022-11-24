@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "license": "MIT",
   "homepage": "https://github.com/liihom/slate-editor",
   "workspaces": [
@@ -15,6 +15,7 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
+    "updateVersion": "lerna version patch --exact --conventional-commits",
     "lernaVersion": "lerna version patch --exact --force-publish --conventional-commits",
     "lernaPublish": "lerna publish from-git"
   },
