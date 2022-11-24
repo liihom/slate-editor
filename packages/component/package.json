@@ -21,8 +21,7 @@
     "url": "https://github.com/rojer95/dslate"
   },
   "license": "MIT",
-  "type": "module",
-  "main": "es/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
   "types": "lib/index.d.ts",
   "files": [
